@@ -44,9 +44,15 @@ a:hover{
     margin-right: 1rem;
 }
 .announcements {
-    position: absolute;
-    left: 60%;
-    margin: 1rem;
+    width: 100vw;
+    height: 25px;
+    background-color: var(--primary);
+    color: #FFF;
+    text-align: center;
+    padding: .1rem;
+}
+.announcements a{
+    color: #FFF;
 }
 
 .content {
@@ -84,10 +90,17 @@ margin: .2rem;
 .emailList button {
     margin-top: 1rem;
 }
+
 .introImage {
     display: flex;
     background-color: #333;
     width: 40%;
+}
+
+.introImageMobile {
+    display: none;
+    width: 100%;
+    padding: 1rem;
 }
 
 .button {
@@ -105,4 +118,25 @@ margin: .2rem;
     align-items: flex-end;
     padding: 1rem;
     color:var(--secondary);
+}
+
+@media (max-width: 800px) {
+    .content {
+        flex-direction: column;
+        padding: 1rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .intro {
+        width: 100%;
+    }
+    .introImage {
+        display: none;
+    }
+    .introImageMobile {
+        display: block;
+    }
+    .intro p {
+        margin: 1rem 0 1rem 0;
+    }
 }
