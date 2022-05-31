@@ -28,10 +28,13 @@ a:hover{
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
+    border-bottom: 1px solid var(--primary);
+    margin-bottom: 1rem;
 }
 
 .header {
     width: 300px;
+
 }
 .links {
     display: flex;
@@ -39,4 +42,35 @@ a:hover{
 }
 .links a {
     margin-right: 1rem;
+}
+
+.content {
+    min-height: 70vh;
+    width: 100vw;
+    padding: 5rem;
+    display: flex;
+    flex-direction: row;
+}
+.intro {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.intro p {
+    margin: 1rem 0 2rem 0;
+}
+.introImage {
+    width: 50%;
+}
+.footer {
+    padding: 1rem;
+}
+
+.button {
+    cursor: pointer;
+    outline: none;
+    border:none;
+    background-color: var(--primary);
+    padding: .5rem 1rem .5rem 1rem;
+    color: white;
 }
