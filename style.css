@@ -7,8 +7,9 @@
 }
 
 :root {
-    --primary: #333;
-    --secondary: #333;
+    --primary: #27272a;
+    --secondary: #71717a;
+    --light: #e4e4e7;
 }
 
 a {
@@ -34,7 +35,9 @@ a:hover{
 
 .header {
     width: 300px;
-
+}
+.header img {
+    width: 100%;
 }
 .links {
     display: flex;
@@ -85,12 +88,11 @@ a:hover{
     flex-direction: column;
 }
 .emailList input{
-margin: .2rem;
+margin: .4rem;
 }
 .emailList button {
     margin-top: 1rem;
 }
-
 .introImage {
     display: flex;
     background-color: #333;
@@ -114,13 +116,22 @@ margin: .2rem;
 
 .footer {
     display: flex;
-    height: 100px;
+    height: fit-content;
     align-items: flex-end;
     padding: 1rem;
     color:var(--secondary);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 667px) {
+    .header {
+        width: 50%;
+    }
+    .header img {
+        object-fit: contain;
+    }
+    .links {
+        display: none;
+    }
     .content {
         flex-direction: column;
         padding: 1rem;
@@ -128,6 +139,7 @@ margin: .2rem;
         align-items: flex-start;
     }
     .intro {
+        text-align: center;
         width: 100%;
     }
     .introImage {
@@ -139,4 +151,10 @@ margin: .2rem;
     .intro p {
         margin: 1rem 0 1rem 0;
     }
+    .emailList {
+        background: var(--light);
+        width: 100%;
+        padding: 1rem;
+    }
+
 }
