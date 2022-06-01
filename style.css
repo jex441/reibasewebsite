@@ -21,18 +21,33 @@ a:hover{
     text-decoration: underline;
     color: var(--primary)
 }
-
 .nav {
     padding: 1rem;
     display: flex;
+    flex-wrap: wrap;
     width: 100vw;
-    height: 90px;
-    flex-direction: row;
+    height: fit-content;
     justify-content: space-between;
     align-items: flex-end;
     border-bottom: 1px solid var(--primary);
 }
-
+.mobileNav {
+    display: none;
+    flex-direction: column;
+    padding: 1rem;
+}
+.mobileMenu {
+    display: none;
+    background-image: url("./menu.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+.mobileMenu ul, li {
+    margin-bottom: 1rem;
+}
 .header {
     width: 300px;
 }
@@ -57,7 +72,6 @@ a:hover{
 .announcements a{
     color: #FFF;
 }
-
 .content {
     min-height: 70vh;
     width: 100vw;
@@ -86,9 +100,12 @@ a:hover{
 .emailList {
     display: flex;
     flex-direction: column;
+    background: var(--light);
+    padding: 1rem;
 }
 .emailList input{
-margin: .4rem;
+    padding: 5px;
+margin: .5rem .5rem 0 0;
 }
 .emailList button {
     margin-top: 1rem;
@@ -113,7 +130,6 @@ margin: .4rem;
     padding: .5rem 1rem .5rem 1rem;
     color: white;
 }
-
 .footer {
     display: flex;
     height: fit-content;
@@ -152,9 +168,16 @@ margin: .4rem;
         margin: 1rem 0 1rem 0;
     }
     .emailList {
-        background: var(--light);
         width: 100%;
-        padding: 1rem;
     }
-
+    .emailList input {
+        margin: 1rem 0 0 0;
+        width: 100%;
+    }
+    .mobileMenu {
+        display:block;
+    }
+    .mobileNav {
+        display: block;
+    }
 }
