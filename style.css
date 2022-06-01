@@ -9,7 +9,7 @@
 :root {
     --primary: #27272a;
     --secondary: #71717a;
-    --light: #e4e4e7;
+    --bglight: #e4e4e7;
 }
 
 a {
@@ -34,7 +34,7 @@ a:hover{
 .mobileNav {
     display: none;
     flex-direction: column;
-    padding: 1rem;
+    width: 100vw;
 }
 .mobileMenu {
     display: none;
@@ -46,7 +46,7 @@ a:hover{
     cursor: pointer;
 }
 .mobileMenu ul, li {
-    margin-bottom: 1rem;
+    margin: 1rem 0 1rem 0;
 }
 .header {
     width: 300px;
@@ -100,7 +100,7 @@ a:hover{
 .emailList {
     display: flex;
     flex-direction: column;
-    background: var(--light);
+    background: var(--bglight);
     padding: 1rem;
 }
 .emailList input{
