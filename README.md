@@ -9,3 +9,6 @@ This is a static html/css website for Reibase Inc. It has no Javascript. It is r
 ![mobile](https://user-images.githubusercontent.com/75996017/171424643-db170e48-6079-44c5-8f51-f6ad07d1de42.png)
 
 ![responsive](https://user-images.githubusercontent.com/75996017/171434212-f1f3137b-322e-42dd-84a5-a6cab9db9711.gif)
+
+In the event we decide to launch this website as a Single Page Application this is the repo for the same site as a React App:
+https://github.com/JeffreyLWood/reibasewebapp
