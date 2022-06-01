@@ -9,27 +9,47 @@
   </head>
 
   <body>
+
     <!-- Desktop Menu -->
     <span>
     <nav class="nav">
       <header class="header"><img src="/logo.png" /></header>
       <div class="links">
-        <a href="#">Services</a> <a href="#">Team</a> <a href="#">Protocol</a>
+        <a href="./services.html">Services</a> <a href="./team.html">Team</a> <a href="./protocol.html">Protocol</a>
         <div>
             <form> <input type="text" name="search"/ placeholder="Search"></form>
         </div>
       </div>
     </span>
 
-    <!-- Hamburger Menu Icon -->
+    <!-- Hamburger Menu Icon / Mobile Only -->
     <div class="mobileMenu"></div>
 
     <!-- Mobile Menu -->
-    <div class="mobileNav"><ul><li> <form> <input type="text" name="search"/ placeholder="Search"></form></li><li><a href="#">Services</a></li><li><a href="#">Team</a></li><li><a href="#">Protocol</a></li></ul></div>
+    <div class="mobileNav">
+      <ul>
+      <li> 
+        <form>
+          <input type="text" name="search"/ placeholder="Search">
+        </form>
+      </li>
+      <li>
+        <a href="./services.html">Services</a>
+      </li>
+      <li>
+        <a href="./team.html">Team</a>
+      </li>
+      <li>
+        <a href="./protocol.html">Protocol</a>
+      </li>
+    </ul>
+  </div>
     </nav>
 
+    <!-- Announcments Banner -->
+    <section class="announcements"><a href="#">Announcements</a></section>
+
     <!-- Content -->
-<section class="announcements"><a href="#">Announcements</a></section>
     <section class="content">
       <div class="intro">
         <span class="h1">Direct open-source stakeholder participation.</span>
@@ -38,14 +58,17 @@
           tokenize source code. We aim to provide hosting, search, security, and
           other services.
         </p>
+
         <div class="introImageMobile">
-          <a href="/index.html"><img src="./introimage.png" /></a>
+          <a href="./index.html"><img src="./introimage.png" /></a>
         </div>
+
         <div class="emailList">
          <span> <label for="emailList" />Receive Updates On Our Progress:</label><input type="email" name="emailList" placeholder="name@email.com" /></span>
           <button type="button" class="button">Submit</button>
         </div>
       </div>
+
       <div class="introImage">
         <img src="./introimage.png" />
       </div>

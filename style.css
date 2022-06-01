@@ -9,7 +9,7 @@
 :root {
     --primary: #27272a;
     --secondary: #71717a;
-    --bglight: #e4e4e7;
+    --bglight: #f4f4f5;
 }
 
 a {
@@ -100,8 +100,6 @@ a:hover{
 .emailList {
     display: flex;
     flex-direction: column;
-    background: var(--bglight);
-    padding: 1rem;
 }
 .emailList input{
     padding: 5px;
@@ -109,6 +107,7 @@ margin: .5rem .5rem 0 0;
 }
 .emailList button {
     margin-top: 1rem;
+    width: 50%;
 }
 .introImage {
     display: flex;
@@ -169,10 +168,14 @@ margin: .5rem .5rem 0 0;
     }
     .emailList {
         width: 100%;
+        background-color: var(--bglight);
     }
     .emailList input {
         margin: 1rem 0 0 0;
         width: 100%;
+    }
+    .emailList button {
+        width: auto;
     }
     .mobileMenu {
         display:block;
