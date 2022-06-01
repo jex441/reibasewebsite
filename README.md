@@ -8,7 +8,4 @@ This is a static html/css website for Reibase Inc. It has no Javascript. It is r
 
 ![mobile](https://user-images.githubusercontent.com/75996017/171424643-db170e48-6079-44c5-8f51-f6ad07d1de42.png)
 
-<a href="https://www.loom.com/share/58f9a2f0be454bfeb03bd872e40022a4">
-    <p>Reibase - 1 June 2022 - Watch Video</p>
-    <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/58f9a2f0be454bfeb03bd872e40022a4-with-play.gif">
-  </a>
+![gif](https://cdn.loom.com/sessions/thumbnails/58f9a2f0be454bfeb03bd872e40022a4-with-play.gif)
