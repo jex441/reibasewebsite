@@ -62,17 +62,14 @@ a:hover{
 .links a {
     margin-right: 1rem;
 }
-.announcements {
+.announcementsWrapper {
     width: 100vw;
-    height: 25px;
-    background-color: var(--primary);
-    color: #FFF;
-    text-align: center;
-    padding: .1rem;
+    padding-right: 15rem;
+    height: fit-content;
+    display: flex;
+    justify-content: end;
 }
-.announcements a{
-    color: #FFF;
-}
+
 .content {
     min-height: 70vh;
     width: 100vw;
@@ -113,15 +110,16 @@ a:hover{
 .introImage {
     display: flex;
     background-color: #333;
-    width: 40%;
+    width: 50%;
 }
-
 .introImageMobile {
     display: none;
     width: 100%;
     padding: 1rem;
 }
-
+.introImageMobile img {
+    width: 100%;
+}
 .button {
     cursor: pointer;
     outline: none;
@@ -148,9 +146,10 @@ a:hover{
     .links {
         display: none;
     }
-    /* .nav {
-        position:fixed;
-    } */
+.announcementsWrapper{
+    justify-content: flex-start;
+    padding: 0;
+}
     .mobileMenu {
         display:block;
     }
