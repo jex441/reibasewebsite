@@ -6,6 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reibase</title>
     <link rel="stylesheet" href="./style.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('QjpzE2RJb1rGVGPs0');
+        })();
+    </script>
+    <script type="text/javascript">
+      window.onload = function() {
+          document.getElementById('email-list').addEventListener('submit', function(event) {
+              event.preventDefault();
+              emailjs.sendForm('service_36ferie', 'template_bm4bbbe', this)
+                  .then(function() {
+                      console.log('SUCCESS!');
+                  }, function(error) {
+                      console.log('FAILED...', error);
+                  });
+          });
+      }
+  </script>
   </head>
 
   <body>
@@ -66,14 +85,16 @@
         </div>
 
         <div class="emailList">
+          <form id="email-list">
          <span>
            <label for="emailList" />Receive updates on our progress:</label>
         </span>
         <span>
           <input type="email" name="emailList" placeholder="Enter an email address" />
         </span>
-          <button type="button" class="button">Submit</button>
+          <button type="submit" value="Send" class="button">Submit</button>
         </div>
+      </form>
       </div>
 
       <!-- Intro Image Desktop -->
