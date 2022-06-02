@@ -4,10 +4,13 @@
 
 ## scripts
 
-npm start
-npm run build
+## npm start
 
-## runs on localhost:3000
+starts the development server on localhost:3000
+
+## npm run build
+
+bundles the production build using webpack
 
 ![responsive](https://user-images.githubusercontent.com/75996017/171434212-f1f3137b-322e-42dd-84a5-a6cab9db9711.gif)
 
