@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "start": "node server",
-    "start-dev": "webpack -w",
     "build": "webpack",
     "build-watch": "webpack -w"
   },
