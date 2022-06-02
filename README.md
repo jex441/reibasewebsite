@@ -1,8 +1,6 @@
 # reibasewebsite
 
-## Description:
-
-## scripts
+# scripts
 
 ## npm start
 
