@@ -1,5 +1,5 @@
 .teamContent {
-    min-height: 70vh;
+    min-height: 78vh;
     width: 100vw;
     padding: 2rem;
     display: flex;
@@ -11,8 +11,8 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    height: 15rem;
-    padding: 1rem;
+    min-height: 15rem;
+    padding: 2rem;
     border-bottom: 1px #CCC solid;
 }
 .teamPhoto {
@@ -20,12 +20,12 @@
     justify-content: center;
     align-items: center;
     width: 25%;
-    overflow: hidden;
 }
 .teamPhoto img {
     border-radius: 50%;
     max-height: 100%;
-    max-width: 100%;
+    width: 10rem;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 .teamBio {
     display: flex;
@@ -48,13 +48,15 @@
 }
 .bio {
    color: var(--secondary);
+   line-height: 1.5rem;
 }
 .links {
+    padding-top:1rem;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
 }
 .links img {
-    width: 1rem;
-    margin-right: .5rem;
+    width: 1.7rem;
+    margin-right: .3rem;
 }

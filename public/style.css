@@ -14,16 +14,6 @@
     --secondary: #71717a;
     --bglight: #f4f4f5;
 }
-
-a {
-    text-decoration: none;
-    color: var(--primary)
-}
-
-a:hover{
-    text-decoration: underline;
-    color: var(--primary)
-}
 .nav {
     padding: 1rem;
     display: flex;
@@ -37,6 +27,13 @@ a:hover{
 }
 .nav a {
     font-size: 16px;
+    border-bottom: 1px hidden var(--primary);
+    text-decoration: none;
+    color: var(--primary)
+}
+.nav a:hover{
+    border-bottom: 1px solid var(--primary);
+    color: var(--primary);
 }
 .mobileNav {
     display: none;
@@ -76,7 +73,7 @@ a:hover{
     justify-content: end;
 }
 .content {
-    min-height: 70vh;
+    min-height: 78vh;
     width: 100vw;
     padding: 5rem;
     display: flex;
@@ -144,6 +141,7 @@ a:hover{
     align-items: flex-end;
     padding: 1rem;
     color:var(--secondary);
+    height:min-content;
 }
 
 @media (max-width: 667px) {
