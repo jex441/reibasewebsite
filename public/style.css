@@ -10,9 +10,10 @@
 }
 
 :root {
-    --primary: #27272a;
+    --primary: #3730a3;
     --secondary: #71717a;
-    --bglight: #f4f4f5;
+    --dark: #111827;
+    --light: #f4f4f5;
 }
 .nav {
     padding: 1rem;
@@ -22,7 +23,7 @@
     height: fit-content;
     justify-content: space-between;
     align-items: flex-end;
-    border-bottom: 1px solid var(--primary);
+    border-bottom: 1px solid var(--secondary);
     background-color: #FFF;
 }
 .nav a {
@@ -126,7 +127,7 @@
     cursor: pointer;
     outline: none;
     border:none;
-    background-color: var(--primary);
+    background-color: var(--dark);
     padding: .5rem 1rem .5rem 1rem;
     color: white;
 }
@@ -182,7 +183,7 @@
     }
     .emailList {
         width: 100%;
-        background-color: var(--bglight);
+        background-color: var(--light);
     }
     .emailList button {
         width: auto;

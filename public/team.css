@@ -44,7 +44,7 @@
 .title {
     font-size: 14px;
     font-weight: 500;
-    color:blueviolet;
+    color: var(--primary);
 }
 .bio {
    color: var(--secondary);
