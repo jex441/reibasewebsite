@@ -6,6 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reibase</title>
     <link rel="stylesheet" href="./style.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('QjpzE2RJb1rGVGPs0');
+        })();
+    </script>
+    <script type="text/javascript">
+      window.onload = function() {
+          document.getElementById('email-list').addEventListener('submit', function(event) {
+              event.preventDefault();
+              emailjs.sendForm('service_36ferie', 'template_bm4bbbe', this)
+                  .then(function() {
+                      document.getElementById('confirm-email').innerText = "You have been added to the email list."
+                  }, function(error) {
+                    document.getElementById('confirm-email').innerText = "There was an error."
+                      console.log(error);
+                  });
+          });
+      }
+  </script>
   </head>
 
   <body>
@@ -65,16 +85,23 @@
           <a href="./index.html"><img src="./turbosrc-demo-short.gif" /></a>
         </div>
 
-        <div class="emailList">
+       
+          <form id="email-list">
+            <div class="emailList">
          <span>
-           <label for="emailList" />Receive updates on our progress:</label>
+           <label for="user_email" />Receive updates on our progress:</label>
         </span>
         <span>
-          <input type="email" name="emailList" placeholder="Enter an email address" />
+          <input type="email" placeholder="Enter an email address" name="user_email" />
         </span>
-          <button type="button" class="button">Submit</button>
+          <span>
+            <button type="submit" value="Send" class="button">Submit</button>
+          </span>
+          <span id="confirm-email" class="confirmEmail"></span>
         </div>
       </div>
+      </form>
+      
 
       <!-- Intro Image Desktop -->
       <div class="introImage">
