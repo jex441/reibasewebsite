@@ -2,8 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
+    font-weight:300;
+    font-size: 12px;
+    letter-spacing: .5px;
 }
 
 :root {
@@ -31,6 +34,9 @@ a:hover{
     align-items: flex-end;
     border-bottom: 1px solid var(--primary);
     background-color: #FFF;
+}
+.nav a {
+    font-size: 16px;
 }
 .mobileNav {
     display: none;
