@@ -7,25 +7,7 @@
     <title>Reibase</title>
     <link rel="stylesheet" href="./style.css" />
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            emailjs.init('QjpzE2RJb1rGVGPs0');
-        })();
-    </script>
-    <script type="text/javascript">
-      window.onload = function() {
-          document.getElementById('email-list').addEventListener('submit', function(event) {
-              event.preventDefault();
-              emailjs.sendForm('service_36ferie', 'template_bm4bbbe', this)
-                  .then(function() {
-                      document.getElementById('confirm-email').innerText = "You have been added to the email list."
-                      document.getElementById('email-input').value = ""
-                  }, function(error) {
-                    document.getElementById('confirm-email').innerText = "There was an error."
-                      console.log(error);
-                  });
-          });
-      }
+    <script type="text/javascript" src="/script.js">
   </script>
   </head>
 
