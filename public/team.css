@@ -59,3 +59,12 @@
 .links img {
     width: 1.7rem;
 }
+@media (max-width: 667px) {
+    .teamContent {
+        padding: 0;
+    }
+    .teamWrapper {
+    padding: 1rem;
+    margin: 0;
+}
+}
