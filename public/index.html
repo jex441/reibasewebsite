@@ -19,6 +19,7 @@
               emailjs.sendForm('service_36ferie', 'template_bm4bbbe', this)
                   .then(function() {
                       document.getElementById('confirm-email').innerText = "You have been added to the email list."
+                      document.getElementById('email-input').value = ""
                   }, function(error) {
                     document.getElementById('confirm-email').innerText = "There was an error."
                       console.log(error);
@@ -92,7 +93,7 @@
            <label for="user_email" />Receive updates on our progress:</label>
         </span>
         <span>
-          <input type="email" placeholder="Enter an email address" name="user_email" />
+          <input id="email-input" type="email" placeholder="Enter an email address" name="user_email" />
         </span>
           <span>
             <button type="submit" value="Send" class="button">Submit</button>
