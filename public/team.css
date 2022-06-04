@@ -67,4 +67,8 @@
     padding: 1rem;
     margin: 0;
 }
+.teamPhoto {
+    height: 10rem;
+    width:10rem;
+}
 }
