@@ -1,0 +1,73 @@
+.teamContent {
+    min-height: 78vh;
+    width: 100vw;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.teamWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 15rem;
+    padding: 2rem;
+    border-bottom: 1px #CCC solid;
+    margin-bottom: 2rem;
+}
+.teamPhoto {
+    margin:auto;
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    width: 12rem;
+    height: 12rem;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+.teamBio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 70%;
+    padding: 0 1rem 0 1rem;
+}
+.teamBio span {
+    margin-bottom: .5rem;
+}
+.name {
+    font-weight: 500;
+    font-size: 14px;
+}
+.title {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--primary);
+}
+.bio {
+   color: var(--secondary);
+   line-height: 1.5rem;
+}
+.links {
+    padding-top:1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.links img {
+    width: 1.7rem;
+}
+@media (max-width: 667px) {
+    .teamContent {
+        padding: 0;
+    }
+    .teamWrapper {
+    padding: 1rem;
+    margin: 0;
+}
+.teamPhoto {
+    height: 10rem;
+    width:10rem;
+}
+}
