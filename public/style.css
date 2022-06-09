@@ -158,7 +158,12 @@
 }
 
 @media (max-width: 667px) {
-    .nav {position:fixed;}
+    .nav {
+        position:fixed;
+    }
+    .content {
+        margin-top: 6rem;
+    }
     .header {
         width: 50%;
     }
@@ -180,7 +185,7 @@
     }
     .menu {
         position: fixed;
-        top: 80px;
+        top: 75px;
         left: 0;
         flex-direction: column;
         width: 100%;
@@ -189,7 +194,6 @@
         background-color: #FFF;
         height: 0;
         transition: height 400ms;
-
       }
       .menu li a {
           font-size: 28px;

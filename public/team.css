@@ -63,14 +63,19 @@
 }
 @media (max-width: 667px) {
     .teamContent {
+        margin-top: 6rem;
         padding: 0;
     }
     .teamWrapper {
-    padding: 1rem;
-    margin: 0;
+    flex-direction: column;
+    padding: .5rem;
 }
 .teamPhoto {
     height: 10rem;
     width:10rem;
+    margin-bottom: 2rem;
+}
+.teamBio {
+    width: 100%;
 }
 }
