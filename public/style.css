@@ -33,6 +33,9 @@
     color: var(--primary);
     overflow: hidden;
 }
+.nav ul li {
+    overflow: hidden;
+}
 .nav a:hover{
     border-bottom: 1px solid var(--primary);
     color: var(--primary);
