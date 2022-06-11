@@ -163,6 +163,7 @@
 @media (max-width: 667px) {
     .nav {
         position:fixed;
+        top:0;
     }
     .content {
         margin-top: 6rem;
