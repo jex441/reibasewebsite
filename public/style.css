@@ -8,7 +8,9 @@
     font-size: 14px;
     letter-spacing: .3px;
 }
-
+a:visited {
+    color: var(--primary);
+}
 :root {
     --primary: #3730a3;
     --secondary: #71717a;
