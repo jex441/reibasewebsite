@@ -13,7 +13,7 @@
     width: 100%;
     min-height: 15rem;
     padding: 2rem;
-    border-bottom: 1px var(--secondary) solid;
+    border-bottom: 1px var(--lightgray) solid;
     margin-bottom: 2rem;
 }
 .teamWrapper:last-child{
