@@ -13,8 +13,13 @@
     --primary: #3730a3;
     --secondary: #71717a;
     --dark: #111827;
-    --light: #f4f4f5;
+    --green: #22c55e;
+    --lightblue: #a2d9ff;
+    --violet: #5b21b6;
+    --light: #94a3b8;
+    --lightbg:#f1f5f9;
 }
+
 .nav {
     padding: 1rem;
     display: flex;
