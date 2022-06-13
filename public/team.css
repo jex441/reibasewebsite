@@ -82,11 +82,6 @@
     margin-bottom: 2rem;
     }
 .teamBio {
-    flex-direction: column;
-    height: 30rem;
     width: 100%;
-    }
-    .links  {
-        background-color: red;
     }
 }
