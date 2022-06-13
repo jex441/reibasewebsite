@@ -26,11 +26,12 @@
     display: flex;
     flex-wrap: wrap;
     width: 100vw;
-    height: 6rem;
+    height: 7rem;
     justify-content: space-between;
     align-items: flex-end;
     background-color: #FFF;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    overflow: hidden;
 }
 .nav a {
     font-size: 16px;
@@ -41,10 +42,6 @@
 }
 .nav ul li {
     overflow: hidden;
-}
-.nav a:hover{
-    border-bottom: 1px solid var(--primary);
-    color: var(--primary);
 }
 .mobileNav {
     display: none;
