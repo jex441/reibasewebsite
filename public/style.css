@@ -7,12 +7,19 @@
     font-weight:300;
     font-size: 14px;
     letter-spacing: .3px;
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: var(--primary);
 }
 a:visited {
     color: var(--primary);
 }
 :root {
-    --primary: #3730a3;
+    --primary: #564ed1;
     --secondary: #71717a;
     --lightgray: #e5e7eb;
     --dark: #111827;
@@ -21,6 +28,7 @@ a:visited {
     --violet: #5b21b6;
     --light: #f3f4f6;
     --lightbg:#f1f5f9;
+    --box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
 .nav {
