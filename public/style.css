@@ -7,6 +7,13 @@
     font-weight:300;
     font-size: 14px;
     letter-spacing: .3px;
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: var(--primary);
 }
 a:visited {
     color: var(--primary);
