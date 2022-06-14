@@ -24,7 +24,7 @@
     height: 14rem;
     width: 100%;
     background: rgb(86,78,209);
-    background: radial-gradient(circle, rgba(86,78,209,1) 25%, rgba(83,75,203,1) 54%, rgba(65,58,180,1) 100%);
+    background: radial-gradient(circle, rgba(86,78,209,1) 14%, rgba(83,75,203,1) 74%, rgba(71,64,187,1) 100%);
     color: #FFF;
     padding: 2rem;
     font-size: 18px;
