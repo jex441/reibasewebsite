@@ -1,0 +1,43 @@
+
+.servicesContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 80vh;
+    padding: 4rem;
+}
+.heading {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    margin: 2rem;
+}
+.heading span {
+    font-size: 24px;
+    font-weight: bold;
+}
+.services {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.service {
+    height: 12rem;
+    width: 33%;
+    background-color: var(--primary);
+    color: #FFF;
+    padding: 2rem;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 2rem;
+    box-shadow: var(--box-shadow);
+}
+.serviceText {
+display: flex;
+justify-content: flex-start;
+flex-direction: column;
+line-height: 2rem;
+}
