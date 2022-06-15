@@ -28,6 +28,20 @@ a:visited {
     --violet: #5b21b6;
     --light: #f3f4f6;
     --lightbg:#f1f5f9;
+    --lightgreen: #8ef378;
+    --bluegreen: #1cbbb4;
+    --lightpink: #f286a0;
+    --pink:#e95f62;
+    --skyblue: #2aeeff;
+    --cerulean: #5580eb;
+    --lightpurple: #a34dec;
+    --darkpurple: #6e48aa;
+    --yellow: #ff8807;
+    --gold: #ff8203;
+    --orange: #ff6636;
+    --rose: #ec4d6f;
+    --greenblue: #74dcc4;
+    --bluegreen2: #4597e9;
     --box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     --bggradient: radial-gradient(circle, rgba(86,78,209,1) 14%, rgba(83,75,203,1) 74%, rgba(71,64,187,1) 100%);
 }
