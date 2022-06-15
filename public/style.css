@@ -19,13 +19,13 @@ a:visited {
     color: var(--primary);
 }
 :root {
-    --primary: #564ed1;
+    --primary: var(--violet);
+    --violet: #564ed1;
     --secondary: #71717a;
     --lightgray: #e5e7eb;
     --dark: #111827;
     --green: #22c55e;
     --lightblue: #a2d9ff;
-    --violet: #5b21b6;
     --light: #f3f4f6;
     --lightbg:#f1f5f9;
     --lightgreen: #8ef378;
@@ -44,6 +44,9 @@ a:visited {
     --bluegreen2: #4597e9;
     --box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     --bggradient: radial-gradient(circle, rgba(86,78,209,1) 14%, rgba(83,75,203,1) 74%, rgba(71,64,187,1) 100%);
+    --pinkgradient: linear-gradient(to right, var(--lightpink), var(--pink));
+    --orangegradient: linear-gradient(to right, var(--gold), var(--orange));
+    --rosegradient: linear-gradient(to right, var(--rose), var(--orange));
 }
 
 .nav {
