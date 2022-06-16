@@ -47,6 +47,7 @@ a:visited {
     --pinkgradient: linear-gradient(to right, var(--lightpink), var(--pink));
     --orangegradient: linear-gradient(to right, var(--gold), var(--orange));
     --rosegradient: linear-gradient(to right, var(--rose), var(--orange));
+    --purplegradient: linear-gradient(to bottom, var(--violet), rgb(40, 0, 133));
 }
 
 .nav {
@@ -181,9 +182,8 @@ a:visited {
     display: none;
     width: 100%;
     padding: 1rem;
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
-.introImageMobile img {
+.introImageMobile video{
     width: 100%;
 }
 .button {
