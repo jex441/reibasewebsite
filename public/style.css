@@ -53,20 +53,20 @@ a:visited {
     color: var(--secondary);
 }
 .nav {
-    padding: 1rem 5rem 0rem 1rem;
+    padding: 1rem 5rem .5rem 2rem;
     display: flex;
     flex-wrap: wrap;
     width: 100vw;
-    height: 7rem;
+    height: 6rem;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: flex-end;
     background-color: #FFF;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     overflow: hidden;
 }
-.nav a {
+.nav ul li {
+    margin-bottom: .5rem;
     font-size: 16px;
-    overflow: hidden;
 }
 .nav a:hover {
     color: var(--primary);
