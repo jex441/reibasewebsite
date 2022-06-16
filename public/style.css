@@ -214,7 +214,7 @@ a:active {
     padding: 1rem;
     color:var(--secondary);
     background-color: var(--lightbg);
-    height: 3rem;
+    height: 4rem;
 }
 
 @media (max-width: 667px) {
