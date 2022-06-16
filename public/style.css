@@ -9,16 +9,7 @@
     letter-spacing: .3px;
     scroll-behavior: smooth;
 }
-a {
-    font-size: inherit;
-    text-decoration: none;
-}
-a:hover {
-    color: var(--primary);
-}
-a:visited {
-    color: var(--primary);
-}
+
 :root {
     --primary: var(--violet);
     --violet: #564ed1;
@@ -50,25 +41,35 @@ a:visited {
     --rosegradient: linear-gradient(to right, var(--rose), var(--orange));
     --purplegradient: linear-gradient(to bottom, var(--violet), rgb(40, 0, 133));
 }
-
+a {
+    font-size: inherit;
+    text-decoration: none;
+    color: var(--secondary);
+}
+a:hover {
+    color: var(--primary);
+}
+a:visited {
+    color: var(--secondary);
+}
 .nav {
-    padding: 1rem;
+    padding: 1rem 5rem 0rem 1rem;
     display: flex;
     flex-wrap: wrap;
     width: 100vw;
     height: 7rem;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: baseline;
     background-color: #FFF;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     overflow: hidden;
 }
 .nav a {
     font-size: 16px;
-    border-bottom: 1px solid #FFF;
-    text-decoration: none;
-    color: var(--primary);
     overflow: hidden;
+}
+.nav a:hover {
+    color: var(--primary);
 }
 .nav ul li {
     overflow: hidden;
@@ -226,6 +227,7 @@ a:visited {
 
 @media (max-width: 667px) {
     .nav {
+        padding:1rem;
         position:fixed;
         top:0;
     }
