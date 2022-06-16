@@ -35,6 +35,9 @@
     margin: 2rem;
     box-shadow: var(--box-shadow);
 }
+.services a:hover {
+    color: #FFF;
+}
 .serviceText {
 display: flex;
 justify-content: flex-start;
