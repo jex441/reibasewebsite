@@ -52,6 +52,12 @@ a:hover {
 a:visited {
     color: var(--secondary);
 }
+a:visited:hover {
+    color: var(--primary);
+}
+a:active {
+    color: var(--primary);
+}
 .nav {
     padding: 1rem 5rem .5rem 2rem;
     display: flex;
@@ -107,20 +113,6 @@ a:visited {
 }
 .header img {
     width: 100%;
-}
-.links {
-    display: flex;
-    flex-direction: row;
-}
-.links a {
-    margin-right: 1rem;
-}
-.announcementsWrapper {
-    width: 100vw;
-    padding-right: 15rem;
-    height: fit-content;
-    display: flex;
-    justify-content: end;
 }
 .content {
     min-height: 83vh;
