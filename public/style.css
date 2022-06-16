@@ -148,8 +148,7 @@ a:active {
     display: flex;
     flex-direction: column;
     width: 70%;
-    background: var(--purplegradient);
-    color: #FFF;
+    color: #000;
     border-radius: 10px;
     padding: 1rem;
 }
@@ -164,7 +163,6 @@ a:active {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-
 }
 .emailList input{
     border: 1px solid var(--secondary);
