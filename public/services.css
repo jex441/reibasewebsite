@@ -6,9 +6,6 @@
     min-height: 80vh;
     padding: 4rem;
 }
-.servicesContent:nth-child(2) {
-    justify-content: end;
- }
 .heading {
     width: 100vw;
     display: flex;
@@ -24,12 +21,12 @@
 }
 .services a {
     cursor: default;
-    height: 14rem;
+    display: flex;
+    flex-direction: column;
+    height: 16rem;
     width: 100%;
-    background: var(--violet);
-    color: #FFF;
+    color: var(--dark);
     padding: 2rem;
-    font-size: 26px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,9 +34,11 @@
     margin: 2rem;
     box-shadow: var(--box-shadow);
 }
-.services a:hover {
-    color: #FFF;
+.services a span {
+    margin-top:1rem;
+    font-size: 26px;
 }
+
 .serviceText {
 display: flex;
 justify-content: flex-start;
