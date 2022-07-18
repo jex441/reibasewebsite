@@ -38,13 +38,11 @@
     margin-top:1rem;
     font-size: 26px;
 }
-
 .serviceText {
 display: flex;
 justify-content: flex-start;
-flex-direction: column;
+flex-direction: row;
 line-height: 2rem;
-margin: 0rem 0 0rem 0;
 border-bottom: 1px solid var(--lightgray);
 padding: 3rem;
 }
@@ -55,6 +53,7 @@ padding: 3rem;
 text-align: right;
 justify-content: flex-end;
 align-items: flex-end;
+flex-direction: row-reverse;
 }
 .serviceText h1 {
     line-height: 3rem;
@@ -66,14 +65,18 @@ align-items: flex-end;
     width: 50%;
     font-size: 18px;
 }
-.serviceText ul li {
-    font-size: 18px;
-    margin-bottom: 1rem;
+.serviceText span {
+width: 50%;
+display: flex;
+justify-content: flex-start;
+flex-direction: column;
 }
-.serviceText ul {
-    list-style: disc;
-    margin: 2rem;
-}
+
+.serviceText span img{
+height: 8rem;
+width: auto;
+    }
+
 
 @media (max-width: 667px) {
     .heading {
