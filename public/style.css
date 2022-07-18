@@ -12,7 +12,7 @@
 
 :root {
     --primary: var(--violet);
-    --violet: #564ed1;
+    --violet: #3c18b3;
     --secondary: #71717a;
     --lightgray: #e5e7eb;
     --dark: #111827;
@@ -141,7 +141,7 @@ a:active {
 .intro p {
     line-height: 2rem;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 16px;
     margin: 1rem 0 2rem 0;
 }
 .emailList {
