@@ -9,7 +9,7 @@
 .teamWrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 100%;
     min-height: 15rem;
     padding: 2rem;
@@ -34,7 +34,7 @@
     flex-direction: column;
     align-items: flex-start;
     height: auto;
-    width: 70%;
+    width: 50%;
     padding: 0 1rem 0 1rem;
 }
 .teamBio span {
