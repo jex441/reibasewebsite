@@ -6,6 +6,9 @@
     min-height: 80vh;
     padding: 4rem;
 }
+.servicesContent:nth-child(2) {
+    justify-content: end;
+ }
 .heading {
     width: 100vw;
     display: flex;
@@ -44,17 +47,24 @@ flex-direction: column;
 line-height: 2rem;
 margin: 2rem 0 2rem 0;
 border-bottom: 1px solid var(--lightgray);
-padding-bottom: 2rem;
+padding: 2rem;
 }
 .serviceText:last-child {
     border: none;
+}
+.serviceText:nth-child(3) {
+text-align: right;
+justify-content: flex-end;
+align-items: flex-end;
 }
 .serviceText h1 {
     line-height: 3rem;
     font-size: 32px;
     color: var(--primary);
+    margin-bottom:1rem;
 }
-.serviceText div {
+.serviceText p {
+    width: 50%;
     font-size: 18px;
 }
 .serviceText ul li {
