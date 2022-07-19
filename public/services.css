@@ -21,12 +21,12 @@
 }
 .services a {
     cursor: default;
-    height: 14rem;
+    display: flex;
+    flex-direction: column;
+    height: 16rem;
     width: 100%;
-    background: var(--violet);
-    color: #FFF;
+    color: var(--dark);
     padding: 2rem;
-    font-size: 26px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,26 +34,36 @@
     margin: 2rem;
     box-shadow: var(--box-shadow);
 }
-.services a:hover {
-    color: #FFF;
+.services a span {
+    margin-top:1rem;
+    font-size: 26px;
 }
+
 .serviceText {
 display: flex;
 justify-content: flex-start;
 flex-direction: column;
 line-height: 2rem;
-margin: 2rem 0 2rem 0;
+margin: 0rem 0 0rem 0;
 border-bottom: 1px solid var(--lightgray);
+padding: 3rem;
 }
 .serviceText:last-child {
     border: none;
+}
+.serviceText:nth-child(3) {
+text-align: right;
+justify-content: flex-end;
+align-items: flex-end;
 }
 .serviceText h1 {
     line-height: 3rem;
     font-size: 32px;
     color: var(--primary);
+    margin-bottom:1rem;
 }
-.serviceText div {
+.serviceText p {
+    width: 50%;
     font-size: 18px;
 }
 .serviceText ul li {
