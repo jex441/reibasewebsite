@@ -279,7 +279,7 @@ a:active {
         align-items: flex-start;
     }
     .intro {
-        text-align: center;
+        text-align: left;
         width: 100%;
     }
     .emailList {

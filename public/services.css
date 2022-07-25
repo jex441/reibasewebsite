@@ -38,7 +38,6 @@
     margin-top:1rem;
     font-size: 26px;
 }
-
 .serviceText {
 display: flex;
 justify-content: flex-start;
@@ -80,7 +79,6 @@ align-items: flex-end;
         margin: 10rem 1rem 1rem 1rem;
         font-size: 24px;
     }
-
     .servicesContent {
         padding: 1rem;
     }
@@ -91,4 +89,21 @@ align-items: flex-end;
         line-height: 1.5rem;
         text-align: center;
     }
+    .services {
+        display:none;
+    }
+    .serviceText {
+        width: 100%;
+        margin: 0;
+        padding: 2rem 1rem 2rem 1rem;
+        justify-content: flex-start;
+    }
+    .serviceText:nth-child(3) {
+        text-align: left;
+        justify-content: flex-start;
+        align-items: flex-start;
+        }
+        .serviceText p {
+            width: 100%;
+        }
 }
