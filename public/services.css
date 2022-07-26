@@ -76,8 +76,10 @@ align-items: flex-end;
 
 @media (max-width: 667px) {
     .heading {
-        margin: 10rem 2rem 1rem 0rem;
+        margin: 10rem 2rem 1rem 1rem;
         font-size: 26px;
+        justify-content: flex-start;
+        text-align: left;
     }
     .servicesContent {
         padding: 1rem;
