@@ -213,7 +213,7 @@ a:active {
     height: 4rem;
 }
 
-@media (max-width: 667px) {
+@media (max-width: 854px) {
     .nav {
         padding:1rem;
         position:fixed;
