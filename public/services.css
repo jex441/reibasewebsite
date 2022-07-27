@@ -18,19 +18,19 @@
 .heading span {
     padding: 2rem;
     width: 40%;
-    font-size: 36px;
+    font-size: 40px;
     line-height: 3.5rem;
     color: var(--primary);
 }
 .heading span ul li {
-    margin-left: 8rem;
+    margin-left: 10rem;
     font-size: 28px;
     margin-bottom: 1rem;
     color: var(--dark);
 }
 .heading span ul li img {
   height: 1.5rem;
-  margin-right: 3rem;
+  margin-right: 5rem;
 }
 .services {
     display: flex;
