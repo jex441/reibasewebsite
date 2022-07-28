@@ -23,14 +23,13 @@
     color: var(--primary);
 }
 .heading span ul li {
-    margin-left: 10rem;
     font-size: 28px;
     margin-bottom: 1rem;
     color: var(--dark);
 }
 .heading span ul li img {
-  height: 1.5rem;
-  margin-right: 5rem;
+    margin-right: 4rem;
+  height: 1rem;
 }
 .services {
     display: flex;
@@ -62,9 +61,8 @@ justify-content: flex-start;
 align-items: flex-start;
 flex-direction: row;
 line-height: 2rem;
-margin: 0rem 0 2rem 0;
 border-bottom: 1px solid var(--lightgray);
-padding: 3rem;
+padding: 6rem 1rem 6rem 1rem;
 }
 .serviceText span:first-child {
     width: 55%;
@@ -113,15 +111,16 @@ padding: 3rem;
     }
     .heading span ul {
         display: flex;
-        justify-content: left;
+        justify-content: center;
         flex-wrap: wrap;
         width:100%;
         margin: 0rem;
     }
     .heading span ul li {
-margin: 1rem;
-        font-size: 22px;
-        color: var(--dark);
+    width:40%;
+    margin: 1rem;
+    font-size: 22px;
+    color: var(--dark);
     }
     .heading span ul li img {
       height: 1rem;
