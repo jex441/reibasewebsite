@@ -94,7 +94,7 @@ padding: 6rem 1rem 6rem 1rem;
     font-size: 18px;
 }
 
-@media (max-width: 667px) {
+@media (max-width: 850px) {
     .heading {
         margin: 6rem 0 0 0;
         font-size: 26px;
