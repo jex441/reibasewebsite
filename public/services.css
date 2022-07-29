@@ -8,11 +8,28 @@
 }
 .heading {
     width: 100vw;
+    padding-top: 6rem;
     display: flex;
-    text-align: center;
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    font-size: 32px;
-    margin-top: 4rem;
+}
+.heading span {
+    padding: 2rem;
+    width: 40%;
+    font-size: 40px;
+    line-height: 3.5rem;
+    color: var(--primary);
+}
+.heading span ul li {
+    font-size: 28px;
+    margin-bottom: 1rem;
+    color: var(--dark);
+}
+.heading span ul li img {
+    margin-right: 4rem;
+    height: 1rem;
 }
 .services {
     display: flex;
@@ -41,20 +58,31 @@
 .serviceText {
 display: flex;
 justify-content: flex-start;
-flex-direction: column;
+align-items: flex-start;
+flex-direction: row;
 line-height: 2rem;
-margin: 0rem 0 0rem 0;
 border-bottom: 1px solid var(--lightgray);
-padding: 3rem;
+padding: 6rem 1rem 6rem 1rem;
+}
+.serviceText span:first-child {
+    width: 55%;
+}
+.serviceText span:last-child {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.serviceText span img {
+    height: 14rem;
 }
 .serviceText:last-child {
     border: none;
 }
-.serviceText:nth-child(3) {
-text-align: right;
-justify-content: flex-end;
-align-items: flex-end;
-}
+.serviceText:nth-child(2) {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    }
 .serviceText h1 {
     line-height: 3rem;
     font-size: 32px;
@@ -62,26 +90,46 @@ align-items: flex-end;
     margin-bottom:1rem;
 }
 .serviceText p {
-    width: 50%;
-    font-size: 18px;
-}
-.serviceText ul li {
-    font-size: 18px;
-    margin-bottom: 1rem;
-}
-.serviceText ul {
-    list-style: disc;
-    margin: 2rem;
+    width: 100%;
+    line-height: 2rem;
+    font-weight: 300;
+    font-size: 16px;
 }
 
-@media (max-width: 667px) {
+@media (max-width: 850px) {
     .heading {
-        margin: 10rem 2rem 1rem 1rem;
+        margin: 6rem 0 0 0;
         font-size: 26px;
         justify-content: flex-start;
         text-align: left;
+        flex-direction: column;
+        padding: 0rem;
+    }
+    .heading span {
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 1rem;
+    padding: 0;
+    }
+    .heading span ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width:100%;
+        margin: 0rem;
+    }
+    .heading span ul li {
+    width:40%;
+    margin: 1rem;
+    font-size: 22px;
+    color: var(--dark);
+    }
+    .heading span ul li img {
+      height: 1rem;
+      margin-right: .5rem;
     }
     .servicesContent {
+        margin-top: 4rem;
         padding: 1rem;
     }
     .services a {
@@ -99,7 +147,25 @@ align-items: flex-end;
         margin: 0;
         padding: 2rem .5rem 2rem .5rem;
         justify-content: flex-start;
+        flex-direction: column-reverse;
     }
+    .serviceText:first-child span {
+        width: 100%;
+    }
+    .serviceText span img {
+        height: 10rem;
+        margin: 2rem;
+    }
+    .serviceText:last-child span {
+        width: 100%;
+    }
+    .serviceText:nth-child(2) {
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        }
+    .serviceText:nth-child(2) span {
+         width: 100%;
+        }
     .serviceText h1 {
         font-size: 26px;
     }
@@ -108,7 +174,7 @@ align-items: flex-end;
         justify-content: flex-start;
         align-items: flex-start;
         }
-        .serviceText p {
-            width: 100%;
-        }
+    .serviceText p {
+        width: 100%;
+    }
 }
