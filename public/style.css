@@ -67,7 +67,7 @@ a:active {
     justify-content: space-between;
     align-items: flex-end;
     background-color: #FFF;
-    box-shadow: 0 4px 8px -1px rgba(130, 130, 130, 0.1), 0 2px 8px -2px rgba(141, 141, 141, 0.1);
+    box-shadow: 0 4px 8px -1px rgba(179, 179, 179, 0.1), 0 2px 8px -2px rgba(199, 199, 199, 0.1);
     overflow: hidden;
     position: fixed;
 }
@@ -104,17 +104,17 @@ a:active {
     overflow: hidden;
   }
   .menu li {
-    margin: 0 1rem;
+    margin: 0 2rem;
   }
   #menu-toggle {
     display: none;
   }
 .header {
-    width: 200px;
+    width: 220px;
     overflow: hidden;
 }
 .header img {
-    width: 100%;
+    max-width: 200px;
 }
 .content {
     min-height: 83vh;
@@ -150,8 +150,8 @@ a:active {
 .emailList {
     display: flex;
     flex-direction: column;
-    width: 70%;
-    border-radius: 10px;
+    width: 80%;
+    border-radius: 3px;
 }
 .emailList h1 {
     font-size: 20px;
@@ -167,17 +167,20 @@ a:active {
 }
 .emailList input{
     border: 1px solid var(--secondary);
-    border-radius: 5px;
+    border-radius: 3px;
     width: 70%;
     padding: 1rem;
     margin: .5rem .5rem 0 0;
 }
 .emailList button {
-    border-radius: 5px;
+    border-radius: 3px;
     margin: .5rem 0 0 0;
     width: 30%;
     font-size: 14px;
-    padding: 1rem;
+    letter-spacing: 1.5px;
+}
+.emailList button:hover {
+    background-color: rgb(40, 0, 133);
 }
 .introImage {
     display: flex;
@@ -223,10 +226,7 @@ a:active {
         top:0;
     }
     .header {
-        width: 50%;
-    }
-    .header img {
-        object-fit: contain;
+        width: 220px;
     }
     .content {
         margin-top: 8rem;
@@ -251,27 +251,27 @@ a:active {
         display: flex;
         background-color: #FFF;
         height: 0;
-        transition: height 400ms;
+        transition: height 0ms;
       }
       .menu li a {
-          font-size: 28px;
+        font-size: 28px;
       }
       .menu li, a {
-          height: 0;
-          transition: height 400ms;
+        height: 0;
+        transition: height 0ms;
       }
       #menu-toggle:checked ~ .menu {
-        transition: height 400ms;
+        transition: height 0ms;
         height: 40vh;
         padding: 1em;
         background-color: #FFF;
         width: 100vw;
         display: flex;
-        border-bottom: 1px solid var(--secondary);
+        border-bottom: .5px solid var(--secondary);
       }
       #menu-toggle:checked ~ .menu li {
-          overflow: visible;
-          margin-bottom: 1rem;
+        overflow: visible;
+        margin-bottom: 1rem;
         height: min-content;
         transition: height 400ms;
       }
