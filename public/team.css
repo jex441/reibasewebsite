@@ -2,6 +2,7 @@
     min-height: 78vh;
     width: 100vw;
     padding: 2rem;
+    margin-top: 6rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -9,7 +10,7 @@
 .teamWrapper {
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 100%;
     min-height: 15rem;
     padding: 2rem;
     border-bottom: 1px var(--lightgray) solid;
@@ -23,10 +24,10 @@
     margin:auto;
     background-position: center;
     background-size: cover;
-    border-radius: 100%;
+    border-radius: 3px;
     background-repeat: no-repeat;
-    width: 14rem;
-    height: 14rem;
+    width: 18rem;
+    height: 18rem;
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 .teamBio {
@@ -41,6 +42,7 @@
     margin-bottom: .5rem;
 }
 .teamBio p {
+    width: 90%;
     margin-bottom: 1rem;
 }
 .name {
@@ -52,9 +54,11 @@
     font-weight: 500;
     color: var(--primary);
 }
-.bio {
+.bio p {
    color: var(--secondary);
-   line-height: 1.5rem;
+   line-height: 2rem;
+   font-weight: 300;
+   font-size: 14px;
 }
 .links {
     padding-top:1rem;
@@ -67,7 +71,7 @@
 }
 @media (max-width: 667px) {
     .teamContent {
-    margin-top: 6rem;
+    margin-top: 8rem;
     padding: 0;
     }
     .teamWrapper {
@@ -78,11 +82,14 @@
     width:100%;
     }
     .teamPhoto {
-    height: 12rem;
-    width:12rem;
+    height: 14rem;
+    width:14rem;
     margin-bottom: 2rem;
     }
     .teamBio {
     width: 100%;
+    }
+    .bio p {
+        width: 100%;
     }
 }
