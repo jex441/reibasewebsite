@@ -47,8 +47,8 @@ a:active {
     justify-content: space-between;
     align-items: flex-end;
     background-color: #FFF;
-    box-shadow: 0 4px 8px -1px rgba(179, 179, 179, 0.1), 0 2px 8px -2px rgba(199, 199, 199, 0.1);
     overflow: visible;
+    border-bottom: 1px solid var(--lightgray);
 }
 .nav ul li {
     margin-bottom: .5rem;
@@ -95,6 +95,7 @@ a:active {
 }
 .header img {
     max-width: 200px;
+    margin-bottom: .2rem;
 }
 .content {
     min-height: 83vh;
@@ -206,6 +207,9 @@ a:active {
     }
     .header {
         width: 220px;
+    }
+    .header img {
+        margin: 0;
     }
     .content {
         margin-top: 8rem;
