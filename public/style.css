@@ -20,26 +20,6 @@
     --lightblue: #a2d9ff;
     --light: #f3f4f6;
     --lightbg:#f1f5f9;
-    --lightgreen: #8ef378;
-    --bluegreen: #1cbbb4;
-    --lightpink: #f286a0;
-    --pink:#e95f62;
-    --skyblue: #2aeeff;
-    --cerulean: #5580eb;
-    --lightpurple: #a34dec;
-    --darkpurple: #6e48aa;
-    --yellow: #ff8807;
-    --gold: #ff8203;
-    --orange: #ff6636;
-    --rose: #ec4d6f;
-    --greenblue: #74dcc4;
-    --bluegreen2: #4597e9;
-    --box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-    --bggradient: radial-gradient(circle, rgba(86,78,209,1) 14%, rgba(83,75,203,1) 74%, rgba(71,64,187,1) 100%);
-    --pinkgradient: linear-gradient(to right, var(--lightpink), var(--pink));
-    --orangegradient: linear-gradient(to right, var(--gold), var(--orange));
-    --rosegradient: linear-gradient(to right, var(--rose), var(--orange));
-    --purplegradient: linear-gradient(to bottom, var(--violet), rgb(40, 0, 133));
 }
 a {
     font-size: inherit;
@@ -67,8 +47,8 @@ a:active {
     justify-content: space-between;
     align-items: flex-end;
     background-color: #FFF;
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-    overflow: hidden;
+    box-shadow: 0 4px 8px -1px rgba(179, 179, 179, 0.1), 0 2px 8px -2px rgba(199, 199, 199, 0.1);
+    overflow: visible;
 }
 .nav ul li {
     margin-bottom: .5rem;
@@ -76,9 +56,10 @@ a:active {
 }
 .nav a:hover {
     color: var(--primary);
+    border-bottom: 1px solid var(--primary);
 }
 .nav ul li {
-    overflow: hidden;
+    overflow: visible;
 }
 .mobileNav {
     display: none;
@@ -99,20 +80,21 @@ a:active {
     flex-direction: row;
     list-style-type: none;
     padding: 0;
+    margin:0;
     overflow: hidden;
   }
   .menu li {
-    margin: 0 1rem;
+    margin: 0 2rem 2rem 1rem;
   }
   #menu-toggle {
     display: none;
   }
 .header {
-    width: 200px;
+    width: 220px;
     overflow: hidden;
 }
 .header img {
-    width: 100%;
+    max-width: 200px;
 }
 .content {
     min-height: 83vh;
@@ -147,8 +129,8 @@ a:active {
 .emailList {
     display: flex;
     flex-direction: column;
-    width: 70%;
-    border-radius: 10px;
+    width: 80%;
+    border-radius: 3px;
 }
 .emailList h1 {
     font-size: 20px;
@@ -164,17 +146,20 @@ a:active {
 }
 .emailList input{
     border: 1px solid var(--secondary);
-    border-radius: 5px;
+    border-radius: 3px;
     width: 70%;
     padding: 1rem;
     margin: .5rem .5rem 0 0;
 }
 .emailList button {
-    border-radius: 5px;
+    border-radius: 3px;
     margin: .5rem 0 0 0;
     width: 30%;
     font-size: 14px;
-    padding: 1rem;
+    letter-spacing: 1.5px;
+}
+.emailList button:hover {
+    background-color: rgb(40, 0, 133);
 }
 .introImage {
     display: flex;
@@ -215,15 +200,12 @@ a:active {
 
 @media (max-width: 854px) {
     .nav {
-        padding:1rem;
-        position:fixed;
-        top:0;
+        padding: 1rem;
+        position: fixed;
+        top: -1px;
     }
     .header {
-        width: 50%;
-    }
-    .header img {
-        object-fit: contain;
+        width: 220px;
     }
     .content {
         margin-top: 8rem;
@@ -239,38 +221,37 @@ a:active {
         display: block;
     }
     .menu {
-        position: fixed;
-        top: 75px;
+        position: absolute;
+        top: 80px;
         left: 0;
         flex-direction: column;
-        width: 100%;
-        align-items: center;
+        width: 100vw;
+        align-items: flex-start;
         display: flex;
         background-color: #FFF;
         height: 0;
-        transition: height 400ms;
+        transition: height 0ms;
       }
       .menu li a {
-          font-size: 28px;
+        font-size: 28px;
       }
       .menu li, a {
-          height: 0;
-          transition: height 400ms;
+        height: 0;
+        transition: height 0ms;
       }
       #menu-toggle:checked ~ .menu {
-        transition: height 400ms;
-        height: 40vh;
-        padding: 1em;
+        position: absolute;
+        transition: height 0ms;
+        height: 25vh;
         background-color: #FFF;
         width: 100vw;
         display: flex;
-        border-bottom: 1px solid var(--secondary);
+        box-shadow: 0 4px 8px -1px rgba(179, 179, 179, 0.1), 0 2px 8px -2px rgba(199, 199, 199, 0.1);
       }
       #menu-toggle:checked ~ .menu li {
-          overflow: visible;
-          margin-bottom: 1rem;
+        overflow: visible;
         height: min-content;
-        transition: height 400ms;
+        transition: height 0ms;
       }
     .content {
         flex-direction: column;
@@ -294,5 +275,4 @@ a:active {
     .introImageMobile {
         display: block;
     }   
-
 }
