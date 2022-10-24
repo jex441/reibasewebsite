@@ -3,11 +3,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
-    font-weight:300;
+    font-weight: 300;
     font-size: 14px;
     letter-spacing: .3px;
     scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 :root {
@@ -19,25 +22,31 @@
     --green: #22c55e;
     --lightblue: #a2d9ff;
     --light: #f3f4f6;
-    --lightbg:#f1f5f9;
+    --lightbg: #f1f5f9;
 }
+
 a {
     font-size: inherit;
     text-decoration: none;
     color: var(--secondary);
 }
+
 a:hover {
     color: var(--primary);
 }
+
 a:visited {
     color: var(--secondary);
 }
+
 a:visited:hover {
     color: var(--primary);
 }
+
 a:active {
     color: var(--primary);
 }
+
 .nav {
     padding: 1rem 5rem .5rem 2rem;
     display: flex;
@@ -50,22 +59,27 @@ a:active {
     overflow: visible;
     border-bottom: 1px solid var(--lightgray);
 }
+
 .nav ul li {
     margin-bottom: .5rem;
     font-size: 16px;
 }
+
 .nav a:hover {
     color: var(--primary);
     border-bottom: 1px solid var(--primary);
 }
+
 .nav ul li {
     overflow: visible;
 }
+
 .mobileNav {
     display: none;
     flex-direction: column;
     width: 100vw;
 }
+
 .mobileMenu {
     display: none;
     background-image: url("./menu.png");
@@ -75,28 +89,34 @@ a:active {
     height: 24px;
     cursor: pointer;
 }
+
 .menu {
     display: flex;
     flex-direction: row;
     list-style-type: none;
     padding: 0;
-    margin:0;
+    margin: 0;
     overflow: hidden;
-  }
-  .menu li {
+}
+
+.menu li {
     margin: 0 2rem 2rem 1rem;
-  }
-  #menu-toggle {
+}
+
+#menu-toggle {
     display: none;
-  }
+}
+
 .header {
     width: 220px;
     overflow: hidden;
 }
+
 .header img {
     max-width: 200px;
     margin-bottom: .2rem;
 }
+
 .content {
     min-height: 83vh;
     width: 100vw;
@@ -106,52 +126,62 @@ a:active {
     align-items: center;
     justify-content: space-between;
 }
+
 .intro {
     display: flex;
     flex-direction: column;
     width: 40%;
 }
+
 .h1 {
     color: var(--primary);
     font-size: 36px;
     line-height: 3rem;
 }
+
 .h2 {
     color: var(--primary);
     font-size: 20px;
     line-height: 2rem;
 }
+
 .intro p {
     line-height: 2rem;
     font-weight: 300;
     font-size: 16px;
     margin: 1rem 0 2rem 0;
 }
+
 .emailList {
     display: flex;
     flex-direction: column;
     width: 80%;
     border-radius: 3px;
 }
+
 .emailList h1 {
     font-size: 20px;
 }
+
 .emailList label {
     font-size: 16px;
     margin: .4rem 0 .4rem 0;
 }
+
 .emailList span {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
 }
-.emailList input{
+
+.emailList input {
     border: 1px solid var(--secondary);
     border-radius: 3px;
     width: 70%;
     padding: 1rem;
     margin: .5rem .5rem 0 0;
 }
+
 .emailList button {
     border-radius: 3px;
     margin: .5rem 0 0 0;
@@ -159,14 +189,17 @@ a:active {
     font-size: 14px;
     letter-spacing: 1.5px;
 }
+
 .emailList button:hover {
     background-color: rgb(40, 0, 133);
 }
+
 .introImage {
     display: flex;
     width: 55%;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
+
 .introImageMobile {
     display: none;
     width: 100%;
@@ -174,27 +207,31 @@ a:active {
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     object-fit: contain;
 }
-.introImageMobile video{
+
+.introImageMobile video {
     width: 100%;
 }
+
 .button {
     cursor: pointer;
     outline: none;
-    border:none;
+    border: none;
     background: var(--primary);
     padding: .5rem 1rem .5rem 1rem;
     color: white;
 }
+
 .confirmEmail {
     font-size: small;
     font-style: italic;
     padding-top: 1rem;
 }
+
 .footer {
     display: flex;
     align-items: flex-end;
     padding: 1rem;
-    color:var(--secondary);
+    color: var(--secondary);
     background-color: var(--lightbg);
     height: 4rem;
 }
@@ -205,25 +242,32 @@ a:active {
         position: fixed;
         top: -1px;
     }
+
     .header {
         width: 220px;
     }
+
     .header img {
         margin: 0;
     }
+
     .content {
         margin-top: 8rem;
     }
+
     .h1 {
         font-size: 28px;
         line-height: 3rem;
     }
+
     .mobileMenu {
-        display:block;
+        display: block;
     }
+
     .mobileNav {
         display: block;
     }
+
     .menu {
         position: absolute;
         top: 80px;
@@ -235,15 +279,19 @@ a:active {
         background-color: #FFF;
         height: 0;
         transition: height 0ms;
-      }
-      .menu li a {
+    }
+
+    .menu li a {
         font-size: 28px;
-      }
-      .menu li, a {
+    }
+
+    .menu li,
+    a {
         height: 0;
         transition: height 0ms;
-      }
-      #menu-toggle:checked ~ .menu {
+    }
+
+    #menu-toggle:checked~.menu {
         position: absolute;
         transition: height 0ms;
         height: 25vh;
@@ -251,32 +299,39 @@ a:active {
         width: 100vw;
         display: flex;
         box-shadow: 0 4px 8px -1px rgba(179, 179, 179, 0.1), 0 2px 8px -2px rgba(199, 199, 199, 0.1);
-      }
-      #menu-toggle:checked ~ .menu li {
+    }
+
+    #menu-toggle:checked~.menu li {
         overflow: visible;
         height: min-content;
         transition: height 0ms;
-      }
+    }
+
     .content {
         flex-direction: column;
         padding: 1rem;
         justify-content: flex-start;
         align-items: flex-start;
     }
+
     .intro {
         text-align: left;
         width: 100%;
     }
+
     .emailList {
         width: 100%;
     }
+
     .introImage {
         display: none;
     }
+
     .intro p {
         margin: 1rem 0 1rem 0;
     }
+
     .introImageMobile {
         display: block;
-    }   
+    }
 }
