@@ -88,6 +88,11 @@
     font-size: 21px;
 }
 
+.strong {
+    font-size: inherit;
+    font-weight: 600;
+}
+
 @media (max-width: 900px) {
     .blog {
         padding: 7rem 2rem 0 1rem;
