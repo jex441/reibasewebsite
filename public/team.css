@@ -6,21 +6,24 @@
     flex-direction: column;
     justify-content: flex-start;
 }
+
 .teamWrapper {
     display: flex;
     flex-direction: row;
     width: 100%;
     min-height: 15rem;
     padding: 4rem 2rem 4rem 2rem;
-    border-bottom: 1px var(--lightgray) solid;
+    border-bottom: 1px #000 solid;
     justify-content: flex-start;
     margin-bottom: 1rem;
 }
-.teamWrapper:last-child{
+
+.teamWrapper:last-child {
     border-bottom: none;
 }
+
 .teamPhoto {
-    margin:auto;
+    margin: auto;
     background-position: center;
     background-size: cover;
     border-radius: 100%;
@@ -29,6 +32,7 @@
     height: 18rem;
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
+
 .teamBio {
     display: flex;
     flex-direction: column;
@@ -36,56 +40,67 @@
     height: auto;
     width: 60%;
 }
+
 .teamBio p {
     width: 90%;
 }
+
 .teamBio span {
     margin-bottom: 1rem;
 }
+
 .name {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 24px;
 }
+
 .title {
     font-size: 16px;
     font-weight: 500;
     color: var(--primary);
 }
+
 .bio p {
-   color: var(--secondary);
-   line-height: 2rem;
-   font-weight: 300;
-   font-size: 14px;
+    line-height: 2rem;
+    font-weight: 300;
+    font-size: 18px;
 }
+
 .links {
-    padding-top:1rem;
+    padding-top: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
 }
+
 .links img {
     width: 1.7rem;
 }
+
 @media (max-width: 667px) {
     .teamContent {
-    margin-top: 8rem;
-    padding: 0;
+        margin-top: 8rem;
+        padding: 0;
     }
+
     .teamWrapper {
-    height: auto;
-    flex-direction: column;
-    padding: 2rem 1rem 2rem 1rem;
-    overflow: visible;
-    width:100%;
+        height: auto;
+        flex-direction: column;
+        padding: 2rem 1rem 2rem 1rem;
+        overflow: visible;
+        width: 100%;
     }
+
     .teamPhoto {
-    height: 14rem;
-    width:14rem;
-    margin-bottom: 2rem;
+        height: 14rem;
+        width: 14rem;
+        margin-bottom: 2rem;
     }
+
     .teamBio {
-    width: 100%;
+        width: 100%;
     }
+
     .bio p {
         width: 100%;
     }
