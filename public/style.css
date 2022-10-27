@@ -134,7 +134,20 @@ a:active {
 }
 
 .h1 {
+    color: black;
+    font-size: 36px;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+}
+
+.h1 a {
     color: var(--primary);
+    font-size: 36px;
+    line-height: 3rem;
+}
+
+.h1 a:hover {
+    color: black;
     font-size: 36px;
     line-height: 3rem;
 }
@@ -196,15 +209,14 @@ a:active {
 
 .introImage {
     display: flex;
+    justify-content: center;
     width: 55%;
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
 .introImageMobile {
     display: none;
     width: 100%;
     margin: 2rem .5rem 2rem .5rem;
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     object-fit: contain;
 }
 
@@ -319,12 +331,14 @@ a:active {
         width: 100%;
     }
 
-    .emailList {
+    .introImage {
+        display: none;
+        margin-top: 5rem;
         width: 100%;
     }
 
-    .introImage {
-        display: none;
+    .emailList {
+        width: 100%;
     }
 
     .intro p {
