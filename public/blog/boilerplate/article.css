@@ -29,8 +29,7 @@
 }
 
 .author {
-    height: 4rem;
-    margin: 2rem 0rem 1.5rem 0rem;
+    margin: 1rem 0rem 1.5rem 0rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -63,7 +62,7 @@
 .blogSubhead {
     width: 100%;
     margin: .5rem 0 1rem 0;
-    font-size: 26px;
+    font-size: 21px;
     line-height: 30px;
     overflow: visible;
     font-style: italic;
@@ -72,13 +71,7 @@
 .readMore a {
     font-weight: 400;
     color: var(--primary);
-    font-size: 18px;
-    text-decoration: underline;
-}
-
-.readMore a:hover {
-    color: var(--dark);
-    font-size: 18px;
+    font-size: 21px;
     text-decoration: underline;
 }
 
@@ -96,6 +89,14 @@
 @media (max-width: 900px) {
     .blog {
         padding: 7rem 2rem 0 1rem;
+    }
+
+    .blogHeadline {
+        font-size: 36px;
+    }
+
+    .blogSubhead {
+        font-size: 22px;
     }
 
     .author span img {
