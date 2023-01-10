@@ -81,6 +81,10 @@
     font-size: 21px;
 }
 
+.articleContent p:last-child {
+    margin-bottom: 6rem;
+}
+
 .strong {
     font-size: inherit;
     font-weight: 600;
@@ -95,8 +99,12 @@
         font-size: 36px;
     }
 
+    .author span {
+        font-size: 20px;
+    }
+
     .blogSubhead {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .author span img {
@@ -107,5 +115,11 @@
         flex-wrap: wrap;
         flex-direction: column;
         height: auto;
+    }
+
+    .articleContent p {
+        margin: 1.5rem 0rem 1rem 0rem;
+        line-height: 30px;
+        font-size: 18px;
     }
 }

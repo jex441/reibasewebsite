@@ -232,9 +232,9 @@ a:active {
     display: flex;
     align-items: flex-end;
     padding: 2rem;
-    color: #fff;
+    color: #ccc;
     background-color: #000;
-    font-size: 18px;
+    font-size: 16px;
     height: 5rem;
 }
 
