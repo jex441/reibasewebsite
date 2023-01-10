@@ -149,7 +149,7 @@ a:active {
 }
 
 .intro p {
-    line-height: 2rem;
+    line-height: 32px;
     font-size: 24px;
     margin: 1rem 0 2rem 0;
 }
@@ -258,8 +258,8 @@ a:active {
     }
 
     .h1 {
-        font-size: 28px;
-        line-height: 3rem;
+        font-size: 46px;
+        line-height: 50px;
     }
 
     .mobileMenu {
