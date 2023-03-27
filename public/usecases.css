@@ -1,0 +1,24 @@
+.useCases {
+    background-color: var(--dark);
+    padding: 4rem;
+    width: 100vw;
+    min-height: 100vh;
+    color: var(--lightgray);
+}
+
+.useCase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin: 1rem;
+    width: 30%;
+    height: 30%;
+}
+
+.useCaseText {
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+}

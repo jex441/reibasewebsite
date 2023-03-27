@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reibase</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./usecases.css" />
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript" src="/script.js">
   </script>
@@ -31,6 +32,9 @@
       <li>
         <a href="./blog/articles.html">Blog</a>
       </li>
+      <li>
+        <!-- <img src="./discord.png"/> -->
+      </li>
     </ul>
     </nav>
 
@@ -38,21 +42,61 @@
     <!-- <section class="announcementsWrapper"><button type="button" class="button">Announcements</button></section> -->
 
     <!-- Content -->
-    <section class="content">
+    <section class="landing">
       <!-- Intro Text Block -->
       <div class="intro">
         <span class="h1">
-          We are pleased to announce Turbosrc.</span>
-          <span class="h1"><a href="https://turbosrc.org" target="_blank">turbosrc.org</a></span>
+          The future of open source infrastructure
+        </span>
         <p>
-          We at Reibase are the original contributors of Turbosrc - a protocol to incentivize open source.
+          Reibase provides a way to monetize open source projects, clearly define control of the project, and reward contributors giving back to the community.
         </p>
-        </div>
-        <div class="introImage">
-          <a href="https://turbosrc.org" target="_blank"><img src="./turbosrc.png" /></a>
+        <button type="button" class="button">Learn More</button>
         </div>
     </section>
+
+
+    <!-- Use Cases / Features -->
+    <div class="useCases">
+      <div class="useCase">
+        <div class="useCaseIcon">
+          <img src="./useCase1.png" />
+        </div>
+        <div class="useCaseText">
+        <h3>Use Case Heading</h3>
+        <p>Use case description text lorem ipsum</p>
+      </div>
+    </div>
+      </div>  
+    
+
     <!-- Footer -->
-    <footer class="footer">Copyright © 2023 Reibase, Inc.</footer>
+    <footer class="footer">
+      <div class="wrapper">
+        <div>
+      <a href="./index.html"><img src="./logowhite.png" /></a>
+        </div>
+        <div>
+        <ul><li>
+          <a href="./team.html">Team</a>
+        </li>
+        <li><a href="./blog/articles.html">Blog</a>
+        </li>
+        </ul>
+      </div>
+      <div>
+        <form class="emailList" name="emailList">
+          <label for="emailList">Book a demo</label>
+          <input type="text" placeholder="Name">
+          <input type="email" placeholder="Email Address" />
+          <button type="submit" class="demoButton">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+      <div class="copyright">
+        Copyright © 2023 Reibase, Inc.
+      </div>
+    </footer>
   </body>
 </html>
