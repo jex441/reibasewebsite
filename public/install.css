@@ -101,6 +101,9 @@
 @media screen and (max-width: 768px) {
     .installContent {
         flex-direction: column-reverse;
+        background-repeat: no-repeat;
+        background-position: 0px 40px;
+        background-size: cover;
     }
 
     .leftSection {
@@ -118,13 +121,18 @@
     }
 
     .leftSection h1 {
-        font-size: 32px;
-        line-height: 36px;
+        font-size: 20px;
+        line-height: 30px;
+        margin: 0rem;
     }
 
     .leftSection p {
         font-size: 14px;
         line-height: 24px;
+    }
+
+    .installDemoForm {
+        margin: 0rem;
     }
 
     .rightSection {
@@ -136,6 +144,6 @@
 
     .rightSection img {
         margin: .5rem;
-        width: 190px;
+        width: 150px;
     }
 }
