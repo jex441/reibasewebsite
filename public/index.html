@@ -8,10 +8,30 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./usecases.css" />
     <link rel="stylesheet" href="./hometeam.css" />
-
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript" src="/script.js">
+    <script type="text/javascript">
+      (function() {
+          emailjs.init('user_kDFY4AFTuoji3GQqaGDsn');
+      })();
   </script>
+  <script type="text/javascript">
+      window.onload = function() {
+          document.getElementById('template_v1ulh7q').addEventListener('submit', function(event) {
+              event.preventDefault();
+              emailjs.sendForm('service_axjc80l', 'template_v1ulh7q', this)
+                  .then(function() {
+                      console.log('SUCCESS!');
+                      document.getElementById("template_v1ulh7q").reset();
+                      document.querySelector(".success").style.display = "block";
+                  }, function(error) {
+                      console.log('FAILED...', error);
+                      document.getElementById("success").style.display = "block";
+                      document.getElementById("success").innerText = "There was an error. Please try again.";
+                  });
+          });
+      }
+  </script>
+
   </head>
 
   <body>
@@ -56,7 +76,7 @@
         <p>
           Reibase provides a way to monetize open source projects, clearly define control of the project, and reward contributors giving back to the community.
         </p>
-        <button type="button" class="button">Get Started</button>
+        <a href="./install.html"><button type="button" class="button">Get Started</button></a>
         </div>
     </section>
 
@@ -156,7 +176,7 @@
             <img src="./dorian.png" />
           </div>
           <div class="homeTeamText">
-          <h3>Dorian Sebastian Key</h3>
+          <h3>Dorian Key</h3>
           <p>Co-founder and CFO</p>
         </div>
         </div>
@@ -168,7 +188,7 @@
           </div>
           <div class="homeTeamText">
           <h3>Jeffrey Wood</h3>
-          <p>Co-founder and Tech Lead</p>
+          <p>Co-founder</p>
         </div>
         </div>
 
@@ -196,11 +216,12 @@
         </ul>
       </div>
       <div>
-        <form class="emailList" name="emailList">
-          <label for="emailList">Book a demo</label>
-          <input type="text" placeholder="Name">
-          <input type="email" placeholder="Email Address" />
+        <form class="emailList" name="demo-form" id="template_v1ulh7q">
+          <label for="demo-form">Book a demo</label>
+          <input type="text" placeholder="Name" name="from_name">
+          <input type="email" placeholder="Email Address" name="reply_to" />
           <button type="submit" class="demoButton">Submit</button>
+          <div class="success">Thank you - we will be in touch shortly.</div>
         </form>
       </div>
     </div>

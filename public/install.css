@@ -1,0 +1,141 @@
+.installContent {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    background-image: url('globelight.png');
+    background-repeat: no-repeat;
+    background-position: 100px 40px;
+    background-size: cover;
+}
+
+.nav {
+    z-index: 1;
+    position: fixed;
+    background: none;
+}
+
+.leftSection {
+    z-index: 1;
+    width: 40%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10rem 2rem;
+    background-color: var(--dark);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.leftSection img {
+    width: 200px;
+    position: fixed;
+    top: 2rem;
+}
+
+.leftSection h1 {
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 48px;
+    margin-bottom: 1.5rem;
+    letter-spacing: .5px;
+}
+
+.leftSection p {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+    color: var(--lightgray);
+    letter-spacing: .5px;
+}
+
+.rightSection {
+    position: fixed;
+    left: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightSection img {
+    margin: 1rem;
+    width: 300px;
+}
+
+
+.installDemoForm {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.installDemoForm input {
+    width: 80%;
+    border: 1px solid var(--secondary);
+    padding: 1rem;
+    margin: .5rem 0rem 0rem 0;
+}
+
+.installDemoFormButton {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    background-color: var(--blue);
+    margin-top: 2rem;
+    padding: .5rem 1rem .5rem 1rem;
+    color: white;
+    width: 25%;
+    height: 45px;
+}
+
+.success {
+    margin-top: .5rem;
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .installContent {
+        flex-direction: column-reverse;
+    }
+
+    .leftSection {
+        width: 100%;
+        height: 50vh;
+        padding: 2rem;
+        top: auto;
+        left: auto;
+        bottom: 0;
+        right: 0;
+    }
+
+    .leftSection img {
+        display: none;
+    }
+
+    .leftSection h1 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .leftSection p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .rightSection {
+        left: 0;
+        height: 50vh;
+        top: 40px;
+        width: 100%;
+    }
+
+    .rightSection img {
+        margin: .5rem;
+        width: 190px;
+    }
+}
