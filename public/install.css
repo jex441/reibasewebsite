@@ -109,7 +109,7 @@
     .leftSection {
         width: 100%;
         height: 50vh;
-        padding: 2rem;
+        padding: 1rem;
         top: auto;
         left: auto;
         bottom: 0;
@@ -128,11 +128,16 @@
 
     .leftSection p {
         font-size: 14px;
-        line-height: 24px;
+        line-height: 20px;
+        margin: 0rem;
+    }
+
+    .installDemoFormButton {
+        margin-top: 1rem;
     }
 
     .installDemoForm {
-        margin: 0rem;
+        margin: 1rem 0rem 0rem 0rem;
     }
 
     .rightSection {
