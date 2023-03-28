@@ -1,0 +1,114 @@
+.homeTeam {
+    padding: 6rem;
+    width: 100vw;
+    min-height: 100vh;
+    color: var(--dark);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeTeamHeading {
+    font-size: 42px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    letter-spacing: .3px;
+    margin: 2rem;
+}
+
+.homeTeamMember {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin: 2rem 2rem 0rem 2rem;
+    width: 20%;
+}
+
+.homeTeamMemberImage img {
+    width: 200px;
+    margin: 1rem;
+}
+
+.homeTeamText {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.homeTeamText h3 {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+    margin-bottom: .5rem;
+    letter-spacing: .3px;
+    text-align: center;
+}
+
+.homeTeamText p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: .3px;
+    text-align: center;
+    color: var(--secondary);
+
+}
+
+.homeTeamAbout {
+    margin: 0rem 6rem 1rem 6rem;
+    width: 100%;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 36px;
+    color: var(--secondary);
+}
+
+.homeTeamAboutDark {
+    font-weight: inherit;
+    font-size: inherit;
+    color: var(--dark);
+}
+
+@media screen and (max-width: 800px) {
+    .homeTeam {
+        width: 100%;
+        margin: 0rem 0rem 0rem 0rem;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0rem;
+        margin-bottom: 2rem;
+    }
+
+    .homeTeamMemberImage img {
+        width: 140px;
+    }
+
+    .homeTeamMember {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+    .homeTeamText p {
+        text-align: left;
+    }
+
+    .homeTeamText h3 {
+        text-align: left;
+    }
+
+    .homeTeamAbout {
+        margin: 0rem;
+        padding: 1rem;
+        width: 100%;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 36px;
+        color: var(--secondary);
+    }
+}

@@ -1,0 +1,86 @@
+.useCases {
+    background-color: var(--dark);
+    padding: 4rem;
+    width: 100vw;
+    min-height: 100vh;
+    color: var(--lightgray);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.useCaseHeading {
+    font-size: 42px;
+    color: #FFF;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    letter-spacing: .3px;
+    margin: 2rem;
+}
+
+.useCase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin: 2rem 2rem 1rem 2rem;
+    width: 25%;
+    height: 30%;
+}
+
+.useCaseIcon {
+    margin: 3rem;
+}
+
+.useCaseIcon img {
+    height: 70px;
+}
+
+.useCaseText {
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+.useCaseText h3 {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+    margin-bottom: .5rem;
+    color: #FFF;
+    letter-spacing: .3px;
+}
+
+.useCaseText p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--lightgray);
+    letter-spacing: .3px;
+
+}
+
+@media screen and (max-width: 800px) {
+    .useCaseHeading {
+        font-size: 28px;
+        margin: 4rem 0rem 4rem 0rem;
+    }
+
+    .useCases {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .useCase {
+        width: 100%;
+        margin: 0rem 0rem 1rem 0rem;
+        flex-direction: row-reverse;
+        padding: 0rem;
+    }
+
+    .useCaseIcon img {
+        width: 80px;
+    }
+}

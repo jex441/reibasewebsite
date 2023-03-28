@@ -6,9 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reibase</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./usecases.css" />
+    <link rel="stylesheet" href="./hometeam.css" />
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript" src="/script.js">
+    <script type="text/javascript">
+      (function() {
+          emailjs.init('user_kDFY4AFTuoji3GQqaGDsn');
+      })();
   </script>
+  <script type="text/javascript">
+      window.onload = function() {
+          document.getElementById('template_v1ulh7q').addEventListener('submit', function(event) {
+              event.preventDefault();
+              emailjs.sendForm('service_axjc80l', 'template_v1ulh7q', this)
+                  .then(function() {
+                      console.log('SUCCESS!');
+                      document.getElementById("template_v1ulh7q").reset();
+                      document.querySelector(".success").style.display = "block";
+                  }, function(error) {
+                      console.log('FAILED...', error);
+                      document.getElementById("success").style.display = "block";
+                      document.getElementById("success").innerText = "There was an error. Please try again.";
+                  });
+          });
+      }
+  </script>
+
   </head>
 
   <body>
@@ -25,11 +48,17 @@
       <div class='mobileMenu'></div>
     </label>
       <ul class="menu">
+        <li>
+          <a href="./install.html">Install</a>
+        </li>
       <li>
         <a href="./team.html">Team</a>
       </li>
       <li>
         <a href="./blog/articles.html">Blog</a>
+      </li>
+      <li>
+        <!-- <img src="./discord.png"/> -->
       </li>
     </ul>
     </nav>
@@ -38,21 +67,168 @@
     <!-- <section class="announcementsWrapper"><button type="button" class="button">Announcements</button></section> -->
 
     <!-- Content -->
-    <section class="content">
+    <section class="landing">
       <!-- Intro Text Block -->
       <div class="intro">
         <span class="h1">
-          We are pleased to announce Turbosrc.</span>
-          <span class="h1"><a href="https://turbosrc.org" target="_blank">turbosrc.org</a></span>
+          The future of open source infrastructure
+        </span>
         <p>
-          We at Reibase are the original contributors of Turbosrc - a protocol to incentivize open source.
+          Reibase provides a way to monetize open source projects, clearly define control of the project, and reward contributors giving back to the community.
         </p>
-        </div>
-        <div class="introImage">
-          <a href="https://turbosrc.org" target="_blank"><img src="./turbosrc.png" /></a>
+        <a href="./install.html"><button type="button" class="button">Get Started</button></a>
         </div>
     </section>
+
+
+    <!-- Use Cases / Features -->
+    <div class="useCases">
+      <div class="useCaseHeading">
+        Make open source your strength
+      </div>
+      <div class="useCase">
+        <div class="useCaseIcon">
+          <img src="./lockicon.png" />
+        </div>
+        <div class="useCaseText">
+        <h3>Secure your open source dependencies</h3>
+        <p>Invest in the project and have a seat at the table for future development</p>
+      </div>
+    </div>
+
+    <div class="useCase">
+      <div class="useCaseIcon">
+        <img src="./contributionicon.png" />
+      </div>
+      <div class="useCaseText">
+      <h3>Incentivize valuable contributions</h3>
+      <p>Take an active role in your favorite open source projects</p>
+    </div>
+  </div>
+
+  <div class="useCase">
+    <div class="useCaseIcon">
+      <img src="./riskicon.png" />
+    </div>
+    <div class="useCaseText">
+    <h3>Manage potential risk</h3>
+    <p>Create transparency around code contributions and their supporters</p>
+  </div>
+</div>
+
+<div class="useCase">
+  <div class="useCaseIcon">
+    <img src="./contributorsicon.png" />
+  </div>
+  <div class="useCaseText">
+  <h3>Know your contributors</h3>
+  <p>Build a community around open source projects</p>
+</div>
+</div>
+
+  <div class="useCase">
+    <div class="useCaseIcon">
+      <img src="./valueicon.png" />
+    </div>
+    <div class="useCaseText">
+    <h3>Value is shared</h3>
+    <p>Reward contributors with part of the value they are creating.</p>
+  </div>
+</div>
+
+<div class="useCase">
+  <div class="useCaseIcon">
+    <img src="./busicon.png" />
+  </div>
+  <div class="useCaseText">
+  <h3>Bus factor is zero</h3>
+  <p>Others can now step in to assist and maintain a key open source project</p>
+</div>
+</div>
+
+      </div>
+    
+      <!-- Team -->
+      <div class="homeTeam">
+
+        <div class="homeTeamMember">
+          <div class="homeTeamMemberImage">
+            <img src="./sophia.png" />
+          </div>
+          <div class="homeTeamText">
+          <h3>Sophia d'Antoine</h3>
+          <p>Co-founder and CEO</p>
+        </div>
+        </div>
+
+        <div class="homeTeamMember">
+          <div class="homeTeamMemberImage">
+            <img src="./david.png" />
+          </div>
+          <div class="homeTeamText">
+          <h3>David Szigeti</h3>
+          <p>Co-founder and CTO</p>
+        </div>
+        </div>
+
+        <div class="homeTeamMember">
+          <div class="homeTeamMemberImage">
+            <img src="./dorian.png" />
+          </div>
+          <div class="homeTeamText">
+          <h3>Dorian Key</h3>
+          <p>Co-founder and CFO</p>
+        </div>
+        </div>
+
+
+        <div class="homeTeamMember">
+          <div class="homeTeamMemberImage">
+            <img src="./jeff.png" />
+          </div>
+          <div class="homeTeamText">
+          <h3>Jeffrey Wood</h3>
+          <p>Co-founder</p>
+        </div>
+        </div>
+
+        <p class="homeTeamAbout">
+          Our team here at Reibase is deeply invested in the open source ecosystem. Our diverse backgrounds in cybersecurity, software supply chains, web3, and open source prepared us for this mission; our history successfully starting and exiting companies will prepare us for success. Our expertise has led us all to the same thesis:<span class="homeTeamAboutDark"> Let’s fix open source and make it a welcome place for future contributors and consumers alike.</span>
+        </p>
+
+      </div>
     <!-- Footer -->
-    <footer class="footer">Copyright © 2023 Reibase, Inc.</footer>
+    <footer class="footer">
+      <div class="wrapper">
+        <div>
+      <a href="./index.html"><img src="./logowhite.png" /></a>
+        </div>
+        <div>
+        <ul>
+          <li>
+            <a href="./install.html">Install</a>
+            </li>
+          <li>
+          <a href="./team.html">Team</a>
+          </li>
+        <li><a href="./blog/articles.html">Blog</a>
+        </li>
+        </ul>
+      </div>
+      <div>
+        <form class="emailList" name="demo-form" id="template_v1ulh7q">
+          <label for="demo-form">Book a demo</label>
+          <input type="text" placeholder="Name" name="from_name">
+          <input type="email" placeholder="Email Address" name="reply_to" />
+          <button type="submit" class="demoButton">Submit</button>
+          <div class="success">Thank you - we will be in touch shortly.</div>
+        </form>
+      </div>
+    </div>
+  </div>
+      <div class="copyright">
+        Copyright © 2023 Reibase, Inc.
+      </div>
+    </footer>
   </body>
 </html>

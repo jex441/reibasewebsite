@@ -2,10 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 300;
     font-size: 14px;
-    letter-spacing: .3px;
     scroll-behavior: smooth;
 }
 
@@ -16,9 +15,10 @@ body {
 :root {
     --primary: var(--violet);
     --violet: #3c18b3;
-    --secondary: #71717a;
-    --lightgray: #e5e7eb;
-    --dark: #111827;
+    --blue: #5200FF;
+    --secondary: #6A6868;
+    --lightgray: #D4D4D4;
+    --dark: #1A181E;
     --green: #22c55e;
     --lightblue: #a2d9ff;
     --light: #f3f4f6;
@@ -57,12 +57,11 @@ a:active {
     align-items: flex-end;
     background-color: #FFF;
     overflow: visible;
-    border-bottom: 1px solid var(--dark);
 }
 
 .nav ul li {
     margin-bottom: .5rem;
-    font-size: 22px;
+    font-size: 18px;
 }
 
 .menu li a:hover {
@@ -70,7 +69,7 @@ a:active {
 }
 
 .nav ul li {
-    overflow: visible;
+    display: block;
 }
 
 .mobileNav {
@@ -100,6 +99,8 @@ a:active {
 
 .menu li {
     margin: 0 2rem 2rem 1rem;
+    display: flex;
+    align-items: center;
 }
 
 #menu-toggle {
@@ -112,62 +113,57 @@ a:active {
 }
 
 .header img {
-    max-width: 200px;
+    max-width: 190px;
     margin-bottom: .2rem;
 }
 
-.content {
-    min-height: 83vh;
+.landing {
+    height: 83vh;
     width: 100vw;
-    padding: 5rem;
+    padding: 8rem 2rem 2rem 6rem;
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
+    background-image: url('./globe.jpg');
+    background-position: right 60px;
+    background-repeat: no-repeat;
+    background-size: 820px;
+    overflow: hidden;
 }
 
 .intro {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 50%;
 }
 
 .h1 {
-    color: black;
-    font-size: 56px;
-    line-height: 56px;
-    font-weight: 500;
-    margin-bottom: 1rem;
-}
-
-.h1 a {
-    font-size: 56px;
-    line-height: 50px;
-    font-weight: 500;
-    margin-bottom: 1rem;
-    color: var(--primary);
+    color: var(--dark);
+    font-size: 64px;
+    line-height: 72px;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
 }
 
 .intro p {
+    font-size: 20px;
     line-height: 32px;
-    font-size: 24px;
-    margin: 1rem 0 2rem 0;
+    font-weight: 400;
+    width: 80%;
+    color: var(--secondary);
 }
 
 .emailList {
     display: flex;
     flex-direction: column;
-    width: 80%;
-    border-radius: 3px;
-}
-
-.emailList h1 {
-    font-size: 20px;
+    width: 100%;
+    margin-bottom: 4rem;
 }
 
 .emailList label {
-    font-size: 16px;
-    margin: .4rem 0 .4rem 0;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 2rem;
 }
 
 .emailList span {
@@ -178,48 +174,35 @@ a:active {
 
 .emailList input {
     border: 1px solid var(--secondary);
-    border-radius: 3px;
-    width: 70%;
     padding: 1rem;
-    margin: .5rem .5rem 0 0;
+    margin: .5rem 0rem 0rem 0;
 }
 
-.emailList button {
-    border-radius: 3px;
-    margin: .5rem 0 0 0;
-    width: 30%;
-    font-size: 14px;
-    letter-spacing: 1.5px;
-}
-
-.emailList button:hover {
-    background-color: rgb(40, 0, 133);
-}
-
-.introImage {
-    display: flex;
-    justify-content: center;
-    width: 55%;
-}
-
-.introImageMobile {
-    display: none;
-    width: 100%;
-    margin: 2rem .5rem 2rem .5rem;
-    object-fit: contain;
-}
-
-.introImageMobile video {
-    width: 100%;
+.demoButton {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    background-color: var(--blue);
+    margin-top: 2rem;
+    padding: .5rem 1rem .5rem 1rem;
+    color: white;
+    width: 180px;
+    height: 45px;
 }
 
 .button {
     cursor: pointer;
     outline: none;
     border: none;
+    font-size: 20px;
     background: var(--primary);
+    margin-top: 4rem;
     padding: .5rem 1rem .5rem 1rem;
     color: white;
+    width: 180px;
+    height: 45px;
+    box-shadow: 0px 5px 4px 1px rgba(0, 0, 0, 0.19);
 }
 
 .confirmEmail {
@@ -230,12 +213,69 @@ a:active {
 
 .footer {
     display: flex;
-    align-items: flex-end;
-    padding: 2rem;
+    flex-direction: column;
+    padding: 4rem;
     color: #ccc;
-    background-color: #000;
-    font-size: 16px;
-    height: 5rem;
+    background-color: var(--dark);
+    font-size: 18px;
+    min-height: 25rem;
+}
+
+.footer a {
+    font-size: 18px;
+    color: #ccc;
+}
+
+.footer a:hover {
+    color: #ccc;
+}
+
+.footer a:active {
+    color: #ccc;
+}
+
+.footer ul li {
+    list-style: none;
+    margin-bottom: 1.5rem;
+    margin-right: 1rem;
+}
+
+.footer .wrapper {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 20rem;
+}
+
+.footer .wrapper div:nth-child(1) {
+    width: fit-content;
+    display: flex;
+    margin-right: 6rem;
+}
+
+.footer .wrapper div:nth-child(2) {
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 1;
+}
+
+.footer .wrapper div:nth-child(3) {
+    width: 400px;
+    display: flex;
+}
+
+.footer .copyright {
+    font-size: 14px;
+    color: #ccc;
+    margin: 1rem;
+    border-top: 1px solid #ccc;
+    padding: 2rem;
+}
+
+.success {
+    margin-top: .5rem;
+    display: none;
 }
 
 @media (max-width: 854px) {
@@ -251,10 +291,6 @@ a:active {
 
     .header img {
         margin: 0;
-    }
-
-    .content {
-        margin-top: 8rem;
     }
 
     .h1 {
@@ -309,11 +345,17 @@ a:active {
         transition: height 0ms;
     }
 
-    .content {
+    .landing {
+        height: 70vh;
         flex-direction: column;
-        padding: 1rem;
+        padding: 2rem;
         justify-content: flex-start;
         align-items: flex-start;
+        margin-top: 8rem;
+        background-position: 10px 300px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        overflow: hidden;
     }
 
     .intro {
@@ -321,21 +363,65 @@ a:active {
         width: 100%;
     }
 
-    .introImage {
-        display: none;
-        margin-top: 5rem;
-        width: 100%;
+    .h1 {
+        font-size: 36px;
+        line-height: 40px;
     }
 
     .emailList {
         width: 100%;
     }
 
+    .emailList label {
+        margin-bottom: 1rem;
+    }
+
     .intro p {
-        margin: 1rem 0 1rem 0;
+        margin: 0rem;
+        font-size: 16px;
+        width: 100%;
     }
 
     .introImageMobile {
         display: block;
+    }
+
+    .footer .wrapper {
+        padding: 0rem;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-height: 15rem;
+    }
+
+    .footer ul {
+        list-style: none;
+        margin-bottom: 1.5rem;
+        display: flex;
+    }
+
+    .footer .wrapper div {
+        width: 100%;
+        margin-right: 0rem;
+        margin-bottom: 2rem;
+    }
+
+    .footer .wrapper div:nth-child(1) {
+        width: 100%;
+        display: block;
+    }
+
+    .footer .wrapper div:nth-child(3) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer .copyright {
+        font-size: 14px;
+        color: #ccc;
+        margin: 1rem;
+        border-top: 1px solid #ccc;
+        padding: 2rem;
     }
 }
