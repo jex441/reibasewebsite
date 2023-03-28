@@ -104,11 +104,12 @@
         background-repeat: no-repeat;
         background-position: 0px 40px;
         background-size: cover;
+        position: fixed;
     }
 
     .leftSection {
         width: 100%;
-        height: 50vh;
+        height: 30vh;
         padding: 1rem;
         top: auto;
         left: auto;
