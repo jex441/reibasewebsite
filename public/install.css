@@ -150,7 +150,6 @@
 
     .rightSection img {
         margin: .5rem;
-        height: 100%;
-        width: auto;
+        height: 200px;
     }
 }
