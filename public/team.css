@@ -13,7 +13,7 @@
     width: 100%;
     min-height: 15rem;
     padding: 2rem 10rem 2rem 2rem;
-    border-bottom: 1px #000 solid;
+    border-bottom: 1px var(--lightgray) solid;
     justify-content: flex-start;
     margin-bottom: 1rem;
 }
@@ -28,8 +28,8 @@
     background-size: cover;
     border-radius: 100%;
     background-repeat: no-repeat;
-    width: 18rem;
-    height: 18rem;
+    width: 16rem;
+    height: 16rem;
 }
 
 .teamBio {
@@ -37,7 +37,7 @@
     flex-direction: column;
     align-items: flex-start;
     height: auto;
-    width: 60%;
+    width: 55%;
 }
 
 .teamBio span {
@@ -47,6 +47,7 @@
 .name {
     font-weight: 600;
     font-size: 34px;
+    letter-spacing: .3px;
 }
 
 .title {
@@ -56,9 +57,10 @@
 }
 
 .bio p {
-    line-height: 32px;
+    font-size: 16px;
+    line-height: 30px;
     font-weight: 300;
-    font-size: 20px;
+    letter-spacing: .3px;
 }
 
 .links {

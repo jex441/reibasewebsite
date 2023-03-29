@@ -36,14 +36,14 @@
     flex-wrap: wrap;
     overflow: visible;
     width: 100%;
-    font-size: 21px;
+    font-size: 18px;
 }
 
 .author span {
     display: flex;
     align-items: center;
     object-fit: contain;
-    font-size: 21px;
+    font-size: 18px;
 }
 
 .authorName {
@@ -62,7 +62,7 @@
 .blogSubhead {
     width: 100%;
     margin: .5rem 0 1rem 0;
-    font-size: 21px;
+    font-size: 18px;
     line-height: 30px;
     overflow: visible;
     font-style: italic;
@@ -71,17 +71,19 @@
 .readMore a {
     font-weight: 400;
     color: var(--primary);
-    font-size: 21px;
+    font-size: 18px;
     text-decoration: underline;
 }
 
 .articleContent p {
     margin: 2rem 0rem 1rem 0rem;
     line-height: 38px;
-    font-size: 21px;
+    font-size: 18px;
 }
 
 .articleContent p:last-child {
+    padding-bottom: 2rem;
+    border-bottom: 1px var(--lightgray) solid;
     margin-bottom: 6rem;
 }
 
@@ -100,11 +102,11 @@
     }
 
     .author span {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .blogSubhead {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .author span img {
@@ -120,6 +122,6 @@
     .articleContent p {
         margin: 1.5rem 0rem 1rem 0rem;
         line-height: 30px;
-        font-size: 18px;
+        font-size: 16px;
     }
 }

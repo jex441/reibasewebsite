@@ -109,7 +109,7 @@
 
     .leftSection {
         width: 100%;
-        height: 40vh;
+        height: fit-content;
         padding: 1rem;
         top: auto;
         left: auto;
@@ -150,6 +150,7 @@
 
     .rightSection img {
         margin: .5rem;
-        width: 150px;
+        height: 100%;
+        width: auto;
     }
 }
