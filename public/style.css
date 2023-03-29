@@ -386,6 +386,10 @@ a:active {
         display: block;
     }
 
+    .footer {
+        padding: 1rem;
+    }
+
     .footer .wrapper {
         padding: 0rem;
         display: flex;
