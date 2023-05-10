@@ -14,22 +14,10 @@
     color: #FFF;
 }
 
-.demoVideoContainer h3 {
-    font-size: 22px;
-    margin-bottom: 10px;
-    letter-spacing: 1px;
-}
-
-.demoVideoContainer h1 .righteous {
-    font-family: 'Righteous';
-    font-size: 42px;
-}
-
 .demoVideoContainer h1 {
     font-family: 'Righteous';
-    font-size: 42px;
-    margin-top: 0;
-    margin-bottom: 20px;
+    font-size: 46px;
+    margin-bottom: 30px;
     font-weight: 600;
     letter-spacing: 1.5px;
 }
@@ -63,6 +51,7 @@
     line-height: 20px;
     font-weight: 400;
     width: 410px;
+    letter-spacing: 1.2px;
 }
 
 .videoRightText span {
@@ -72,13 +61,14 @@
 .demoVideoContainer .videoLeftText .videoSubText,
 .demoVideoContainer .videoRightText .videoSubText {
     font-size: 14px;
-    margin-top: 10px;
+    font-weight: 300;
+    margin-top: 4px;
     color: #B7B7B7;
 }
 
 @media (max-width: 768px) {
     .demoVideoContainer {
-        min-height: 70vh;
+        min-height: 100vh;
         padding: 4rem 1rem 1rem 1rem;
     }
 
@@ -86,7 +76,7 @@
         text-align: center;
         font-size: 36px;
         line-height: 40px;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
 
     .demoVideoContainer h1 .righteous {
